@@ -8,6 +8,7 @@
 
 > « Comme son titre l'indique, ce recueil de nouvelles m'a fait passer par de multiples émotions. Du sourire aux larmes, des regrets à l'espoir, de la colère à la joie, parfois. En quelques mots, quelques phrases, l'auteure nous emporte dans son univers, vous ressentez et vivez avec les personnages, il vous rappellent forcément quelqu'un, vous, un proche, un voisin… C'est la vie, et c'est tellement bien écrit ! »
 >
+> — Anonyme
 
 ---
 
