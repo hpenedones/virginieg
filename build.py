@@ -70,12 +70,20 @@ def parse_book(path: Path) -> dict:
     price_m = re.search(r'\| Prix[^|]*\|\s*(€[\d.,]+)', raw)
     price = price_m.group(1) if price_m else ""
 
-    # Extract ## Informations section (rendered separately at page bottom)
+    # Extract ## Informations, ## Disponibilité, ## Liens (rendered separately at bottom)
     info_m = re.search(r'(## Informations\n[\s\S]+?)(?:\n## |\Z)', raw)
     info_raw = info_m.group(1).strip() if info_m else ""
 
-    # Strip ## Informations and ![Featured] from main body so they don't appear inline
+    dispo_m = re.search(r'(## Disponibilité\n[\s\S]+?)(?:\n## |\Z)', raw)
+    dispo_raw = dispo_m.group(1).strip() if dispo_m else ""
+
+    liens_m = re.search(r'(## Liens\n[\s\S]+?)(?:\n## |\Z)', raw)
+    liens_raw = liens_m.group(1).strip() if liens_m else ""
+
+    # Strip those sections and ![Featured] from main body
     raw_body = re.sub(r'## Informations\n[\s\S]+?(?=\n## |\Z)', '', raw).strip()
+    raw_body = re.sub(r'## Disponibilité\n[\s\S]+?(?=\n## |\Z)', '', raw_body).strip()
+    raw_body = re.sub(r'## Liens\n[\s\S]+?(?=\n## |\Z)', '', raw_body).strip()
     raw_body = re.sub(r'!\[Featured\]\([^)]+\)\n?', '', raw_body).strip()
 
     # Résumé section
@@ -93,6 +101,8 @@ def parse_book(path: Path) -> dict:
         price=price,
         resume=resume,
         info_raw=info_raw,
+        dispo_raw=dispo_raw,
+        liens_raw=liens_raw,
         raw=raw_body,
     )
 
@@ -163,6 +173,8 @@ def build():
     for book in books:
         book_html = fix_image_paths(to_html(book["raw"]), "../../")
         info_html = to_html(book["info_raw"]) if book["info_raw"] else ""
+        dispo_html = to_html(book["dispo_raw"]) if book["dispo_raw"] else ""
+        liens_html = to_html(book["liens_raw"]) if book["liens_raw"] else ""
         review_path = ROOT / "reviews" / f"{book['slug']}.md"
         if review_path.exists():
             reviews_raw = re.sub(r'^# .+\n', '', review_path.read_text(encoding="utf-8"), count=1)
@@ -170,7 +182,9 @@ def build():
         else:
             reviews_html = ""
         render("book.html", SITE / "livres" / book["slug"] / "index.html",
-               book={**book, "html": book_html, "info_html": info_html, "reviews_html": reviews_html},
+               book={**book, "html": book_html, "info_html": info_html,
+                     "dispo_html": dispo_html, "liens_html": liens_html,
+                     "reviews_html": reviews_html},
                current_page="livres", base="../../")
 
     # ── Blog posts ── (newest first in listing)

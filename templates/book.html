@@ -36,6 +36,18 @@
   </div>
   {% endif %}
 
+  {% if book.dispo_html %}
+  <div class="book-info">
+    {{ book.dispo_html | safe }}
+  </div>
+  {% endif %}
+
+  {% if book.liens_html %}
+  <div class="book-info">
+    {{ book.liens_html | safe }}
+  </div>
+  {% endif %}
+
 </div>
 
 <div id="lightbox" onclick="this.style.display='none'">
