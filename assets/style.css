@@ -10,7 +10,7 @@
   --color-text: #2a2a2a;
   --color-nav: #707070;
   --color-nav-active: #000;
-  --color-muted: #b7b7b7;
+  --color-muted: #767676;
   --color-border: #e8e8e8;
 }
 
@@ -473,7 +473,7 @@ table td:first-child { color: var(--color-muted); width: 40%; }
   color: var(--color-muted);
   vertical-align: top;
 }
-.book-info td:first-child { color: #888; min-width: 120px; }
+.book-info td:first-child { color: #666; min-width: 120px; }
 .book-dispo {
   margin-top: 1rem;
   font-size: 0.85rem;
