@@ -2,10 +2,10 @@
 {% block title %}{{ book.title }} | Virginie G.{% endblock %}
 {% block content %}
 <div class="book-page">
-  <a href="/livres/" class="back-link">← Livres</a>
+  <a href="{{ base }}livres/" class="back-link">← Livres</a>
 
   {% if book.cover %}
-  <img src="{{ book.cover }}" alt="Couverture — {{ book.title }}" class="book-cover">
+  <img src="{{ base }}{{ book.cover }}" alt="Couverture — {{ book.title }}" class="book-cover">
   {% endif %}
 
   <div class="book-content">
@@ -15,7 +15,7 @@
   {% if book.gallery %}
   <div class="book-gallery">
     {% for img in book.gallery %}
-    <img src="{{ img }}" alt="Intérieur — {{ book.title }}">
+    <img src="{{ base }}{{ img }}" alt="Intérieur — {{ book.title }}">
     {% endfor %}
   </div>
   {% endif %}

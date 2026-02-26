@@ -9,7 +9,7 @@
   {% for post in posts %}
   <li class="post-item">
     <span class="post-num">{{ post.order }}</span>
-    <a href="/textes/{{ post.slug }}/">{{ post.title }}</a>
+    <a href="{{ base }}textes/{{ post.slug }}/">{{ post.title }}</a>
   </li>
   {% endfor %}
 </ul>

@@ -4,9 +4,9 @@
 <h1>Livres</h1>
 <div class="books-grid">
   {% for book in books %}
-  <a href="/livres/{{ book.slug }}/" class="book-card">
+  <a href="{{ base }}livres/{{ book.slug }}/" class="book-card">
     {% if book.cover %}
-    <img src="{{ book.cover }}" alt="Couverture — {{ book.title }}">
+    <img src="{{ base }}{{ book.cover }}" alt="Couverture — {{ book.title }}">
     {% endif %}
     <h2>{{ book.main_title }}</h2>
     {% if book.subtitle %}<p class="card-subtitle">{{ book.subtitle }}</p>{% endif %}

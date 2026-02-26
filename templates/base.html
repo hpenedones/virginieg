@@ -7,18 +7,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Roboto:wght@100;300&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="{{ base }}assets/style.css">
 </head>
 <body>
   <div class="layout">
     <aside class="sidebar">
-      <a href="/" class="logo">
-        <img src="/images/49232-1568638704-logo.png" alt="Virginie G.">
+      <a href="{{ base }}" class="logo">
+        <img src="{{ base }}images/49232-1568638704-logo.png" alt="Virginie G.">
       </a>
       <nav>
         <ul>
-          <li><a href="/livres/"{% if current_page == 'livres' %} class="active"{% endif %}>Livres</a></li>
-          <li><a href="/textes/"{% if current_page == 'textes' %} class="active"{% endif %}>Textes</a></li>
+          <li><a href="{{ base }}livres/"{% if current_page == 'livres' %} class="active"{% endif %}>Livres</a></li>
+          <li><a href="{{ base }}textes/"{% if current_page == 'textes' %} class="active"{% endif %}>Textes</a></li>
         </ul>
       </nav>
       <div class="sidebar-social">

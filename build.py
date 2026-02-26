@@ -26,11 +26,15 @@ def render(template_name, output_path, **ctx):
     output_path.write_text(html, encoding="utf-8")
 
 
-def to_html(text, fix_images=True):
-    if fix_images:
-        text = re.sub(r'\(\.\.\/images\/', '(/images/', text)
-        text = re.sub(r'\(images\/', '(/images/', text)
+def to_html(text):
     return md_lib.markdown(text, extensions=["tables", "nl2br", "attr_list"])
+
+
+def fix_image_paths(html, base):
+    """Rewrite relative image src paths to be relative to the page's depth."""
+    html = re.sub(r'src="\.\./images/', f'src="{base}images/', html)
+    html = re.sub(r'src="images/', f'src="{base}images/', html)
+    return html
 
 
 # ── Parsers ────────────────────────────────────────────────────────────────
@@ -52,10 +56,10 @@ def parse_book(path: Path) -> dict:
 
     # Cover image
     cover_m = re.search(r'!\[Couverture\]\(\.\.\/images\/([^)]+)\)', raw)
-    cover = f"/images/{cover_m.group(1)}" if cover_m else None
+    cover = f"images/{cover_m.group(1)}" if cover_m else None
 
     # Interior / gallery images
-    gallery = [f"/images/{m}" for m in
+    gallery = [f"images/{m}" for m in
                re.findall(r'!\[Intérieur\]\(\.\.\/images\/([^)]+)\)', raw)]
 
     # Price from table
@@ -66,9 +70,7 @@ def parse_book(path: Path) -> dict:
     res_m = re.search(r'## Résumé\n\n([\s\S]+?)(?:\n\n##|\Z)', raw)
     resume = res_m.group(1).strip() if res_m else ""
 
-    # Full HTML (images hidden in CSS; we display cover + gallery manually)
-    html = to_html(raw)
-
+    # Full HTML stored separately; caller must pass base for image paths
     return dict(
         slug=path.stem,
         title=full_title,
@@ -78,7 +80,7 @@ def parse_book(path: Path) -> dict:
         gallery=gallery,
         price=price,
         resume=resume,
-        html=html,
+        raw=raw,
     )
 
 
@@ -94,7 +96,7 @@ def parse_post(path: Path) -> dict:
     title = title_m.group(1) if title_m else slug
 
     img_m = re.search(r'!\[Header image\]\(\.\.\/images\/([^)]+)\)', raw)
-    header_image = f"/images/{img_m.group(1)}" if img_m else None
+    header_image = f"images/{img_m.group(1)}" if img_m else None
 
     # Short excerpt for the listing (first non-empty text after ## Contenu)
     contenu_m = re.search(r'## Contenu\n\n([\s\S]{0,300})', raw)
@@ -111,7 +113,7 @@ def parse_post(path: Path) -> dict:
 
     return dict(
         slug=slug, order=order, title=title,
-        header_image=header_image, excerpt=excerpt, html=html,
+        header_image=header_image, excerpt=excerpt, raw=raw, html=html,
     )
 
 
@@ -129,29 +131,31 @@ def build():
 
     # ── Homepage ──
     hp_raw = (ROOT / "homepage.md").read_text(encoding="utf-8")
-    hp_html = to_html(hp_raw)
+    hp_html = fix_image_paths(to_html(hp_raw), "")
     # Tag the profile photo so CSS can float it
     hp_html = hp_html.replace(
-        'src="/images/virginie-g-profil-originale-hp-5c7sxo.jpg"',
-        'src="/images/virginie-g-profil-originale-hp-5c7sxo.jpg" class="profile-photo"'
+        'src="images/virginie-g-profil-originale-hp-5c7sxo.jpg"',
+        'src="images/virginie-g-profil-originale-hp-5c7sxo.jpg" class="profile-photo"'
     )
-    render("home.html", SITE / "index.html", content=hp_html, current_page="home")
+    render("home.html", SITE / "index.html", content=hp_html, current_page="home", base="")
 
     # ── Books ──
     books = [parse_book(p) for p in sorted((ROOT / "books").glob("*.md"))]
     render("books_list.html", SITE / "livres" / "index.html",
-           books=books, current_page="livres")
+           books=books, current_page="livres", base="../")
     for book in books:
+        book_html = fix_image_paths(to_html(book["raw"]), "../../")
         render("book.html", SITE / "livres" / book["slug"] / "index.html",
-               book=book, current_page="livres")
+               book={**book, "html": book_html}, current_page="livres", base="../../")
 
     # ── Blog posts ── (newest first in listing)
     posts = [parse_post(p) for p in sorted((ROOT / "blog").glob("*.md"), reverse=True)]
     render("posts_list.html", SITE / "textes" / "index.html",
-           posts=posts, current_page="textes")
+           posts=posts, current_page="textes", base="../")
     for post in posts:
+        post_html = fix_image_paths(post["html"], "../../")
         render("post.html", SITE / "textes" / post["slug"] / "index.html",
-               post=post, current_page="textes")
+               post={**post, "html": post_html}, current_page="textes", base="../../")
 
     print(f"✅  {len(books)} livres · {len(posts)} textes")
     print(f"    → {SITE}")
