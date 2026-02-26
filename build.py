@@ -164,7 +164,11 @@ def build():
         book_html = fix_image_paths(to_html(book["raw"]), "../../")
         info_html = to_html(book["info_raw"]) if book["info_raw"] else ""
         review_path = ROOT / "reviews" / f"{book['slug']}.md"
-        reviews_html = fix_image_paths(to_html(review_path.read_text(encoding="utf-8")), "../../") if review_path.exists() else ""
+        if review_path.exists():
+            reviews_raw = re.sub(r'^# .+\n', '', review_path.read_text(encoding="utf-8"), count=1)
+            reviews_html = fix_image_paths(to_html(reviews_raw), "../../")
+        else:
+            reviews_html = ""
         render("book.html", SITE / "livres" / book["slug"] / "index.html",
                book={**book, "html": book_html, "info_html": info_html, "reviews_html": reviews_html},
                current_page="livres", base="../../")
