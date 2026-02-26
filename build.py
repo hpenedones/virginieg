@@ -134,8 +134,11 @@ def parse_post(path: Path) -> dict:
     # Short excerpt for the listing (first non-empty text after ## Contenu)
     contenu_m = re.search(r'## Contenu\n\n([\s\S]{0,300})', raw_body)
     if contenu_m:
-        raw_exc = re.sub(r'[*_`#\[\]!]', '', contenu_m.group(1))
-        raw_exc = re.sub(r'\(\.\.\/images\/[^)]+\)', '', raw_exc)
+        raw_exc = contenu_m.group(1)
+        raw_exc = re.sub(r'!\[[^\]]*\]\([^)]+\)', '', raw_exc)   # strip images
+        raw_exc = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', raw_exc)  # links → text
+        raw_exc = re.sub(r'https?://\S+', '', raw_exc)            # bare URLs
+        raw_exc = re.sub(r'[*_`#!]', '', raw_exc)
         excerpt = ' '.join(raw_exc.split())[:180]
         if len(contenu_m.group(1)) > 180:
             excerpt += "…"
