@@ -260,38 +260,64 @@ table td:first-child { color: var(--color-muted); width: 40%; }
 .book-page .book-content img { display: none; }
 
 /* ── POSTS LIST ── */
-.page-header { margin-bottom: 2rem; }
+.page-header { margin-bottom: 2.5rem; }
 .page-header h1 { margin-bottom: 0.25rem; }
 .page-header .post-count {
   font-size: 0.85rem;
   color: var(--color-muted);
 }
 
-.posts-list { list-style: none; margin-top: 0.5rem; }
-.post-item {
-  border-bottom: 1px solid var(--color-border);
-  padding: 14px 0;
+.posts-grid { display: flex; flex-direction: column; }
+
+.post-card {
   display: flex;
-  align-items: baseline;
-  gap: 12px;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--color-border);
 }
-.post-item a {
+.post-card.reverse { flex-direction: row-reverse; }
+.post-card.no-image { display: block; }
+
+.post-card-image {
+  flex: 0 0 44%;
+  display: block;
+  overflow: hidden;
+}
+.post-card-image img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.post-card-image:hover img { transform: scale(1.03); }
+
+.post-card-text { flex: 1; }
+.post-card-text h2 {
   font-family: var(--font-heading);
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.4rem;
+  margin: 0 0 0.9rem;
+}
+.post-card-text h2 a {
   color: var(--color-text);
   text-decoration: none;
-  transition: color 0.15s;
-  flex: 1;
 }
-.post-item a:hover { color: #000; text-decoration: underline; text-decoration-thickness: 1px; }
-.post-num {
-  font-size: 0.75rem;
-  color: var(--color-border);
-  font-variant-numeric: tabular-nums;
-  min-width: 2rem;
-  text-align: right;
+.post-card-text h2 a:hover { color: #000; }
+.post-card-text p {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  line-height: 1.7;
+  margin: 0 0 1rem;
 }
+.read-more {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+.read-more:hover { color: var(--color-text); }
 
 /* ── INDIVIDUAL POST ── */
 .post-page h1 { margin-bottom: 2rem; }
@@ -338,4 +364,7 @@ table td:first-child { color: var(--color-muted); width: 40%; }
   .book-page .book-cover { float: none; width: 100%; max-width: 240px; margin: 0 auto 1.5rem; display: block; }
   .home-photos { gap: 1rem; }
   .home-photos img { width: 90px; height: 90px; }
+  .post-card, .post-card.reverse { flex-direction: column; gap: 1.5rem; }
+  .post-card-image { flex: none; width: 100%; }
+  .post-card-image img { height: 200px; }
 }

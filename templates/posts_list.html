@@ -5,12 +5,20 @@
   <h1>Textes</h1>
   <p class="post-count">{{ posts | length }} billets</p>
 </div>
-<ul class="posts-list">
+<div class="posts-grid">
   {% for post in posts %}
-  <li class="post-item">
-    <span class="post-num">{{ post.order }}</span>
-    <a href="{{ base }}textes/{{ post.slug }}/">{{ post.title }}</a>
-  </li>
+  <article class="post-card {% if loop.index0 % 2 == 1 %}reverse{% endif %}{% if not post.header_image %} no-image{% endif %}">
+    {% if post.header_image %}
+    <a href="{{ base }}textes/{{ post.slug }}/" class="post-card-image">
+      <img src="{{ base }}{{ post.header_image }}" alt="">
+    </a>
+    {% endif %}
+    <div class="post-card-text">
+      <h2><a href="{{ base }}textes/{{ post.slug }}/">{{ post.title }}</a></h2>
+      {% if post.excerpt %}<p>{{ post.excerpt }}</p>{% endif %}
+      <a href="{{ base }}textes/{{ post.slug }}/" class="read-more">Lire la suite →</a>
+    </div>
+  </article>
   {% endfor %}
-</ul>
+</div>
 {% endblock %}
