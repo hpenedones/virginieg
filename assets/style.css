@@ -530,7 +530,7 @@ table td:first-child { color: var(--color-muted); width: 40%; }
 }
 .post-card-text h2 a:hover { color: #000; }
 .post-card-text p {
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: var(--color-muted);
   line-height: 1.75;
   margin: 0 0 1rem;
