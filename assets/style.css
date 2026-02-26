@@ -399,7 +399,7 @@ table td:first-child { color: var(--color-muted); width: 40%; }
 }
 .book-reviews h2 {
   font-family: var(--font-nav);
-  font-size: 0.75rem;
+  font-size: 1.1rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-muted);
