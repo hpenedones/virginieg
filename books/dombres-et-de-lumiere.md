@@ -26,7 +26,7 @@ Perte, changement, renouveau… Ce recueil nous invite à découvrir six nouvell
 
 L’ombre et la lumière sont-elles toujours là où on pense les trouver ? Sommes-nous à même de percevoir et de choisir la lumière lorsqu’elle se tient tapie dans nos ombres ? Celle-ci peut-elle s'éteindre sans crier gare alors qu'elle resplendissait ? Ou encore rejaillir dans des vies où l’ombre semblait s’être installée ? Voici quelques-uns des questionnements auxquels répondront pour nous Elsa, Edmond dit Raton Laveur Intrépide, Tabatha, Julien et les autres, qui partageront avec vous, lecteur, un bout de leur chemin.
 
-Â© Virginie G. - 2021
+© Virginie G. - 2021
 
 
 ## Disponibilité

@@ -66,11 +66,17 @@ def parse_book(path: Path) -> dict:
     price_m = re.search(r'\| Prix[^|]*\|\s*(€[\d.,]+)', raw)
     price = price_m.group(1) if price_m else ""
 
+    # Extract ## Informations section (rendered separately at page bottom)
+    info_m = re.search(r'(## Informations\n[\s\S]+?)(?:\n## |\Z)', raw)
+    info_raw = info_m.group(1).strip() if info_m else ""
+
+    # Strip ## Informations from main body so it doesn't appear inline
+    raw_body = re.sub(r'## Informations\n[\s\S]+?(?=\n## |\Z)', '', raw).strip()
+
     # Résumé section
     res_m = re.search(r'## Résumé\n\n([\s\S]+?)(?:\n\n##|\Z)', raw)
     resume = res_m.group(1).strip() if res_m else ""
 
-    # Full HTML stored separately; caller must pass base for image paths
     return dict(
         slug=path.stem,
         title=full_title,
@@ -80,7 +86,8 @@ def parse_book(path: Path) -> dict:
         gallery=gallery,
         price=price,
         resume=resume,
-        raw=raw,
+        info_raw=info_raw,
+        raw=raw_body,
     )
 
 
@@ -149,8 +156,12 @@ def build():
            books=books, current_page="livres", base="../")
     for book in books:
         book_html = fix_image_paths(to_html(book["raw"]), "../../")
+        info_html = to_html(book["info_raw"]) if book["info_raw"] else ""
+        review_path = ROOT / "reviews" / f"{book['slug']}.md"
+        reviews_html = fix_image_paths(to_html(review_path.read_text(encoding="utf-8")), "../../") if review_path.exists() else ""
         render("book.html", SITE / "livres" / book["slug"] / "index.html",
-               book={**book, "html": book_html}, current_page="livres", base="../../")
+               book={**book, "html": book_html, "info_html": info_html, "reviews_html": reviews_html},
+               current_page="livres", base="../../")
 
     # ── Blog posts ── (newest first in listing)
     posts = [parse_post(p) for p in sorted((ROOT / "blog").glob("*.md"), reverse=True)]

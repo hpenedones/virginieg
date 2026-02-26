@@ -30,7 +30,7 @@ Composé d’un roman et d’un guide pratique, ce livre vous emmène dans le qu
 
 La partie pratique vous indiquera, avec humour et pédagogie, comment vous faire encore plus plaisir avec un peu de recul et un ajustement de votre rapport à la consommation, découvrant et devenant ainsi la meilleure version de vous-même. Car c’est bien là la destinée de tout matérialiste-minimaliste.
 
-Â© Virginie G. - 2021
+© Virginie G. - 2021
 
 
 ## Disponibilité

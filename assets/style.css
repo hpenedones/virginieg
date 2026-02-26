@@ -258,6 +258,40 @@ table td:first-child { color: var(--color-muted); width: 40%; }
 /* Hide raw markdown images that we display separately */
 .book-page .book-content img { display: none; }
 
+.book-reviews {
+  margin-top: 3rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 2rem;
+}
+.book-reviews h2 {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+.book-reviews blockquote {
+  border-left: 2px solid var(--color-border);
+  margin: 0 0 1.5rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  color: var(--color-muted);
+  font-style: italic;
+}
+.book-reviews blockquote p { margin: 0 0 0.4rem; line-height: 1.7; }
+/* hide the "Acheter ce livre" link inside reviews — already in main content */
+.book-reviews em a { display: none; }
+
+.book-info {
+  margin-top: 3rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 2rem;
+}
+.book-info table {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+.book-info td { padding: 0.3rem 1.5rem 0.3rem 0; vertical-align: top; }
+
 /* ── POSTS LIST ── */
 .page-header { margin-bottom: 2.5rem; }
 .page-header h1 { margin-bottom: 0.25rem; }

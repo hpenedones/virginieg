@@ -19,5 +19,19 @@
     {% endfor %}
   </div>
   {% endif %}
+
+  {% if book.reviews_html %}
+  <div class="book-reviews">
+    <h2>Avis de lecteurs</h2>
+    {{ book.reviews_html | safe }}
+  </div>
+  {% endif %}
+
+  {% if book.info_html %}
+  <div class="book-info">
+    {{ book.info_html | safe }}
+  </div>
+  {% endif %}
+
 </div>
 {% endblock %}
