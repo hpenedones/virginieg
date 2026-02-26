@@ -183,18 +183,20 @@ table td:first-child { color: var(--color-muted); width: 40%; }
 .back-link:hover { color: var(--color-text); }
 
 /* ── HOMEPAGE ── */
-.home-content img {
-  max-width: 360px;
-  display: block;
-  margin: 0 0 1.5rem;
+.home-photos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0 2.5rem;
 }
-/* Float the profile photo right */
-.home-content img.profile-photo {
-  float: right;
-  margin: 0 0 1.5rem 2.5rem;
-  max-width: 280px;
-  border-radius: 2px;
+.home-photos img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
+.home-photos br { display: none; }
 
 /* ── BOOKS LIST ── */
 .books-grid {
@@ -334,5 +336,6 @@ table td:first-child { color: var(--color-muted); width: 40%; }
   .content { margin-left: 0; padding: 28px 20px; max-width: 100%; }
   .books-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .book-page .book-cover { float: none; width: 100%; max-width: 240px; margin: 0 auto 1.5rem; display: block; }
-  .home-content img.profile-photo { float: none; width: 100%; max-width: 280px; margin: 0 0 1.5rem; }
+  .home-photos { gap: 1rem; }
+  .home-photos img { width: 90px; height: 90px; }
 }

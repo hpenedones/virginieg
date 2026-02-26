@@ -132,10 +132,11 @@ def build():
     # ── Homepage ──
     hp_raw = (ROOT / "homepage.md").read_text(encoding="utf-8")
     hp_html = fix_image_paths(to_html(hp_raw), "")
-    # Tag the profile photo so CSS can float it
-    hp_html = hp_html.replace(
-        'src="images/virginie-g-profil-originale-hp-5c7sxo.jpg"',
-        'src="images/virginie-g-profil-originale-hp-5c7sxo.jpg" class="profile-photo"'
+    # Wrap the three intro images in a flex circle gallery
+    hp_html = re.sub(
+        r'<p>(\s*<img[^>]*/>\s*(?:<br\s*/>\s*<img[^>]*/>\s*)*)</p>',
+        r'<div class="home-photos">\1</div>',
+        hp_html
     )
     render("home.html", SITE / "index.html", content=hp_html, current_page="home", base="")
 
