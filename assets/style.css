@@ -234,18 +234,18 @@ table td:first-child { color: var(--color-muted); width: 40%; }
   transform: translateY(-3px);
 }
 .book-card h2 {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: 300;
   margin: 12px 0 4px;
 }
 .book-card .card-subtitle {
-  font-size: 0.82rem;
+  font-size: 1rem;
   color: var(--color-muted);
   font-style: italic;
   margin-bottom: 4px;
 }
 .book-card .card-price {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   margin: 0;
 }
@@ -488,8 +488,8 @@ table td:first-child { color: var(--color-muted); width: 40%; }
 .post-card-text { flex: 1; padding: 2.5rem; }
 .post-card-text h2 {
   font-family: var(--font-heading);
-  font-weight: 300;
-  font-size: 1.4rem;
+  font-weight: 400;
+  font-size: 1.6rem;
   margin: 0 0 0.9rem;
 }
 .post-card-text h2 a {
@@ -498,13 +498,13 @@ table td:first-child { color: var(--color-muted); width: 40%; }
 }
 .post-card-text h2 a:hover { color: #000; }
 .post-card-text p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--color-muted);
-  line-height: 1.7;
+  line-height: 1.75;
   margin: 0 0 1rem;
 }
 .read-more {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--color-muted);
   text-decoration: none;
   letter-spacing: 0.04em;
