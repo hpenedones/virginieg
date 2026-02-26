@@ -101,7 +101,6 @@ nav a:hover::after, nav a.active::after { width: 100%; }
   margin-left: var(--sidebar-width);
   flex: 1;
   padding: 60px 70px;
-  max-width: calc(var(--sidebar-width) + 740px);
 }
 
 /* Typography */
