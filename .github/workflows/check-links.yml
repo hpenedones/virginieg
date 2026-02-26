@@ -26,6 +26,5 @@ jobs:
             --root-dir '${{ github.workspace }}/_site'
             --include-fragments
             --no-progress
-            --exclude-mail
             '_site/**/*.html'
           fail: true
