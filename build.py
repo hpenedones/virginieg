@@ -86,9 +86,16 @@ def parse_book(path: Path) -> dict:
     raw_body = re.sub(r'## Liens\n[\s\S]+?(?=\n## |\Z)', '', raw_body).strip()
     raw_body = re.sub(r'!\[Featured\]\([^)]+\)\n?', '', raw_body).strip()
 
-    # Résumé section
+    # Résumé section — strip trailing © line
     res_m = re.search(r'## Résumé\n\n([\s\S]+?)(?:\n\n##|\Z)', raw)
     resume = res_m.group(1).strip() if res_m else ""
+    resume = re.sub(r'\n©[^\n]*$', '', resume).strip()
+
+    # Buy links as list of (label, url) tuples for button rendering
+    liens_list = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', liens_raw) if liens_raw else []
+
+    # Disponibilité as plain text (one line)
+    dispo_text = re.sub(r'^## Disponibilité\s*', '', dispo_raw).strip() if dispo_raw else ""
 
     return dict(
         slug=path.stem,
@@ -100,9 +107,9 @@ def parse_book(path: Path) -> dict:
         gallery=gallery,
         price=price,
         resume=resume,
+        liens=liens_list,
+        dispo_text=dispo_text,
         info_raw=info_raw,
-        dispo_raw=dispo_raw,
-        liens_raw=liens_raw,
         raw=raw_body,
     )
 
@@ -172,9 +179,8 @@ def build():
            books=books, current_page="livres", base="../")
     for book in books:
         book_html = fix_image_paths(to_html(book["raw"]), "../../")
+        resume_html = to_html(book["resume"]) if book["resume"] else ""
         info_html = to_html(book["info_raw"]) if book["info_raw"] else ""
-        dispo_html = to_html(book["dispo_raw"]) if book["dispo_raw"] else ""
-        liens_html = to_html(book["liens_raw"]) if book["liens_raw"] else ""
         review_path = ROOT / "reviews" / f"{book['slug']}.md"
         if review_path.exists():
             reviews_raw = re.sub(r'^# .+\n', '', review_path.read_text(encoding="utf-8"), count=1)
@@ -182,9 +188,8 @@ def build():
         else:
             reviews_html = ""
         render("book.html", SITE / "livres" / book["slug"] / "index.html",
-               book={**book, "html": book_html, "info_html": info_html,
-                     "dispo_html": dispo_html, "liens_html": liens_html,
-                     "reviews_html": reviews_html},
+               book={**book, "html": book_html, "resume_html": resume_html,
+                     "info_html": info_html, "reviews_html": reviews_html},
                current_page="livres", base="../../")
 
     # ── Blog posts ── (newest first in listing)

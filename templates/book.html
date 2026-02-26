@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ book.title }} | Virginie G.{% endblock %}
+{% block title %}{{ book.main_title }} | Virginie G.{% endblock %}
 {% block content %}
 <div class="book-page">
   <a href="{{ base }}livres/" class="back-link">← Livres</a>
@@ -8,18 +8,36 @@
   <img src="{{ base }}{{ book.featured }}" alt="{{ book.title }}" class="book-featured">
   {% endif %}
 
-  <div class="book-content">
-    {{ book.html | safe }}
+  <div class="book-intro">
+    {% if book.cover %}
+    <img src="{{ base }}{{ book.cover }}" alt="Couverture" class="book-cover-main" onclick="openLightbox(this.src)">
+    {% endif %}
+
+    <div class="book-intro-text">
+      <h1>{{ book.main_title }}</h1>
+      {% if book.subtitle %}<p class="book-subtitle">{{ book.subtitle }}</p>{% endif %}
+      {% if book.price %}<p class="book-price">{{ book.price }}</p>{% endif %}
+
+      <div class="book-resume">{{ book.resume_html | safe }}</div>
+
+      {% if book.liens %}
+      <div class="book-buy">
+        {% for label, url in book.liens %}
+        <a href="{{ url }}" class="btn-buy{% if not loop.first %} btn-secondary{% endif %}" target="_blank" rel="noopener">{{ label }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
   </div>
 
-  {% if book.cover or book.gallery %}
-  <div class="book-gallery">
-    {% if book.cover %}
-    <img src="{{ base }}{{ book.cover }}" alt="Couverture — {{ book.title }}" onclick="openLightbox(this.src)">
-    {% endif %}
-    {% for img in book.gallery %}
-    <img src="{{ base }}{{ img }}" alt="Intérieur — {{ book.title }}" onclick="openLightbox(this.src)">
-    {% endfor %}
+  {% if book.gallery %}
+  <div class="book-gallery-section">
+    <h3 class="gallery-heading">Feuilletez le livre</h3>
+    <div class="book-gallery">
+      {% for img in book.gallery %}
+      <img src="{{ base }}{{ img }}" alt="Intérieur — {{ book.main_title }}" onclick="openLightbox(this.src)">
+      {% endfor %}
+    </div>
   </div>
   {% endif %}
 
@@ -33,18 +51,7 @@
   {% if book.info_html %}
   <div class="book-info">
     {{ book.info_html | safe }}
-  </div>
-  {% endif %}
-
-  {% if book.dispo_html %}
-  <div class="book-info">
-    {{ book.dispo_html | safe }}
-  </div>
-  {% endif %}
-
-  {% if book.liens_html %}
-  <div class="book-info">
-    {{ book.liens_html | safe }}
+    {% if book.dispo_text %}<p class="book-dispo">{{ book.dispo_text }}</p>{% endif %}
   </div>
   {% endif %}
 
