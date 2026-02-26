@@ -23,7 +23,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           args: >
-            --base _site
+            --root-dir '${{ github.workspace }}/_site'
             --include-fragments
             --no-progress
             --exclude-mail
