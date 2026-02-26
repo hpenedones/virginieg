@@ -309,7 +309,7 @@ table td:first-child { color: var(--color-muted); width: 40%; }
   margin-bottom: 1.8rem;
 }
 .book-resume {
-  font-size: 0.98rem;
+  font-size: 1.15rem;
   line-height: 1.85;
   color: #444;
   margin-bottom: 2rem;
