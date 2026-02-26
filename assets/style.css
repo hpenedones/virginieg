@@ -4,10 +4,10 @@
 /* Variables */
 :root {
   --sidebar-width: 260px;
-  --font-nav: 'Didact Gothic', sans-serif;
-  --font-heading: 'Roboto', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
-  --color-text: #333;
+  --font-nav: 'Jost', sans-serif;
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Lora', serif;
+  --color-text: #2a2a2a;
   --color-nav: #707070;
   --color-nav-active: #000;
   --color-muted: #b7b7b7;
@@ -17,7 +17,7 @@
 /* Layout */
 body {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 16px;
   color: var(--color-text);
   line-height: 1.75;
   background: #fff;
@@ -106,23 +106,24 @@ nav a:hover::after, nav a.active::after { width: 100%; }
 /* Typography */
 h1 {
   font-family: var(--font-heading);
-  font-weight: 100;
-  font-size: 2.4rem;
+  font-weight: 300;
+  font-size: 2.6rem;
   color: var(--color-text);
   margin-bottom: 1.8rem;
-  line-height: 1.25;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
 }
 h2 {
   font-family: var(--font-heading);
-  font-weight: 100;
-  font-size: 1.55rem;
+  font-weight: 300;
+  font-size: 1.7rem;
   color: var(--color-text);
   margin: 2.5rem 0 1rem;
 }
 h3 {
   font-family: var(--font-heading);
-  font-weight: 300;
-  font-size: 1.1rem;
+  font-weight: 400;
+  font-size: 1.2rem;
   margin: 1.8rem 0 0.6rem;
 }
 p { margin-bottom: 1.2rem; }
@@ -268,9 +269,9 @@ table td:first-child { color: var(--color-muted); width: 40%; }
 .book-intro-text { flex: 1; padding-top: 0.25rem; }
 .book-intro-text h1 {
   margin: 0 0 0.35rem;
-  font-size: 2rem;
-  font-weight: 100;
-  letter-spacing: 0.04em;
+  font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
 }
 .book-subtitle {
   font-family: var(--font-body);
