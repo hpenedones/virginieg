@@ -441,7 +441,6 @@ table td:first-child { color: var(--color-muted); width: 40%; }
   font-size: 0.9rem;
   color: var(--color-muted);
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   margin: 0.5rem 0 0;
 }
 /* Separator between reviews */
