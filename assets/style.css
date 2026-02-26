@@ -336,11 +336,14 @@ table td:first-child { color: var(--color-muted); width: 40%; }
 .book-gallery {
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .book-gallery img {
+  flex: 1 1 0;
+  min-width: 0;
+  width: 0;
   height: 260px;
-  width: auto;
+  object-fit: cover;
   box-shadow: 0 2px 14px rgba(0,0,0,0.12);
   cursor: zoom-in;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -539,7 +542,8 @@ table td:first-child { color: var(--color-muted); width: 40%; }
   .books-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .book-intro { flex-direction: column; gap: 2rem; }
   .book-cover-main { flex: none; width: 100%; max-width: 220px; }
-  .book-page .book-gallery img { height: 180px; }
+  .book-page .book-gallery { flex-wrap: wrap; }
+  .book-page .book-gallery img { flex: none; height: 160px; width: auto; }
   .home-photos { gap: 1rem; }
   .home-photos img { width: 90px; height: 90px; }
   .post-card, .post-card.reverse { flex-direction: column; gap: 1.5rem; }
