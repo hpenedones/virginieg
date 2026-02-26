@@ -6,7 +6,7 @@
 
 Bienvenue chez moi.
 
-Je m'appelle Virginie et je suis auteure indépendante. Cela signifie que j'écris mes livres, puis travaille personnellement avec une correctrice, une graphiste et un imprimeur pour les mettre en forme, aux standards et en beauté. Je les publie donc sans le sceau d'une maison d'édition, mais avec une qualité égale. Je les vends sur ma [boutique en ligne](https://virginieg.com/boutique) en édition papier, et sur Amazon (KDP select) pour les versions électroniques.
+Je m'appelle Virginie et je suis auteure indépendante. Cela signifie que j'écris mes livres, puis travaille personnellement avec une correctrice, une graphiste et un imprimeur pour les mettre en forme, aux standards et en beauté. Je les publie donc sans le sceau d'une maison d'édition, mais avec une qualité égale. Je les vends sur ma [boutique en ligne](livres/) en édition papier, et sur Amazon (KDP select) pour les versions électroniques.
 
 N'hésitez pas à offrir un de mes livres à un proche ou à vous-même. Pour savoir de quoi ils parlent et ce qu'en disent les lecteurs, voyez les sections y relatives sur votre gauche.
 
