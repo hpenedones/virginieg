@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: images
+public_folder: images
+
+locale: fr
+
+collections:
+  - name: blog
+    label: Billets de blog
+    label_singular: Billet
+    folder: blog
+    create: true
+    slug: "{{order}}-{{slug}}"
+    identifier_field: title
+    fields:
+      - label: Titre
+        name: title
+        widget: string
+      - label: Numéro d'ordre
+        name: order
+        widget: number
+        default: 100
+        hint: "Nombre entier — les billets sont triés par ce numéro (décroissant). Utilisez un nombre plus grand que les existants pour un nouveau billet."
+      - label: Image d'en-tête
+        name: header_image
+        widget: image
+        required: false
+        hint: "Image affichée en haut du billet."
+      - label: Contenu
+        name: body
+        widget: markdown
+
+  - name: books
+    label: Livres
+    label_singular: Livre
+    folder: books
+    create: false
+    fields:
+      - label: Titre
+        name: title
+        widget: string
+      - label: Contenu
+        name: body
+        widget: markdown
