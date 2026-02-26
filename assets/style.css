@@ -135,6 +135,9 @@ strong { font-weight: 500; }
 .post-page .post-content,
 .book-resume,
 .home-content {
+  max-width: 72ch;
+  margin-left: auto;
+  margin-right: auto;
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
@@ -216,6 +219,20 @@ table td:first-child { color: var(--color-muted); width: 40%; }
   flex-shrink: 0;
 }
 .home-photos br { display: none; }
+
+.home-books-banner {
+  margin: 3rem 0 1rem;
+  text-align: center;
+}
+.home-books-banner a { text-decoration: none; }
+.home-books-banner img {
+  max-width: 100%;
+  width: 580px;
+  border-radius: 4px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  transition: opacity 0.2s;
+}
+.home-books-banner a:hover img { opacity: 0.88; }
 
 /* ── BOOKS LIST ── */
 .books-grid {
