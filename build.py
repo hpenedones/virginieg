@@ -216,8 +216,9 @@ def build():
                      "info_html": info_html, "reviews_html": reviews_html},
                current_page="livres", base="../../")
 
-    # ── Blog posts ── (newest first in listing)
+    # ── Blog posts ── (newest first in listing; only posts with a header image)
     posts = [parse_post(p) for p in sorted((ROOT / "blog").glob("*.md"), reverse=True)]
+    posts = [p for p in posts if p["header_image"]]
     render("posts_list.html", SITE / "textes" / "index.html",
            posts=posts, current_page="textes", base="../")
     for post in posts:
