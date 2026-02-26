@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Textes | Virginie G.{% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1>Textes</h1>
+  <p class="post-count">{{ posts | length }} billets</p>
+</div>
+<ul class="posts-list">
+  {% for post in posts %}
+  <li class="post-item">
+    <span class="post-num">{{ post.order }}</span>
+    <a href="/textes/{{ post.slug }}/">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

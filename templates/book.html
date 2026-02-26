@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}{{ book.title }} | Virginie G.{% endblock %}
+{% block content %}
+<div class="book-page">
+  <a href="/livres/" class="back-link">← Livres</a>
+
+  {% if book.cover %}
+  <img src="{{ book.cover }}" alt="Couverture — {{ book.title }}" class="book-cover">
+  {% endif %}
+
+  <div class="book-content">
+    {{ book.html | safe }}
+  </div>
+
+  {% if book.gallery %}
+  <div class="book-gallery">
+    {% for img in book.gallery %}
+    <img src="{{ img }}" alt="Intérieur — {{ book.title }}">
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

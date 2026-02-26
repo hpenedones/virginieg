@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Livres | Virginie G.{% endblock %}
+{% block content %}
+<h1>Livres</h1>
+<div class="books-grid">
+  {% for book in books %}
+  <a href="/livres/{{ book.slug }}/" class="book-card">
+    {% if book.cover %}
+    <img src="{{ book.cover }}" alt="Couverture — {{ book.title }}">
+    {% endif %}
+    <h2>{{ book.main_title }}</h2>
+    {% if book.subtitle %}<p class="card-subtitle">{{ book.subtitle }}</p>{% endif %}
+    {% if book.price %}<p class="card-price">{{ book.price }}</p>{% endif %}
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

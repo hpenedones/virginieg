@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Virginie G.{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Roboto:wght@100;300&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a href="/" class="logo">
+        <img src="/images/49232-1568638704-logo.png" alt="Virginie G.">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/livres/"{% if current_page == 'livres' %} class="active"{% endif %}>Livres</a></li>
+          <li><a href="/textes/"{% if current_page == 'textes' %} class="active"{% endif %}>Textes</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-social">
+        <a href="https://www.instagram.com/virginieg.auteure/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/virginieg.auteure1/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.amazon.fr/l/B071WC8RCX" target="_blank" rel="noopener">Amazon</a>
+      </div>
+    </aside>
+    <main class="content">
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+</body>
+</html>

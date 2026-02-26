@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{{ post.title }} | Virginie G.{% endblock %}
+{% block content %}
+<article class="post-page">
+  <a href="/textes/" class="back-link">← Textes</a>
+
+  {% if post.header_image %}
+  <img src="{{ post.header_image }}" alt="" class="post-header-image">
+  {% endif %}
+
+  {{ post.html | safe }}
+</article>
+{% endblock %}
