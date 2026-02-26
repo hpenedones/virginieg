@@ -17,9 +17,9 @@
 /* Layout */
 body {
   font-family: var(--font-body);
-  font-size: 18px;
+  font-size: 21px;
   color: var(--color-text);
-  line-height: 1.8;
+  line-height: 1.85;
   background: #fff;
 }
 
