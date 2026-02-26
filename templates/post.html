@@ -8,6 +8,8 @@
   <img src="{{ base }}{{ post.header_image }}" alt="" class="post-header-image">
   {% endif %}
 
-  {{ post.html | safe }}
+  <div class="post-content">
+    {{ post.html | safe }}
+  </div>
 </article>
 {% endblock %}

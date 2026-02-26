@@ -5,8 +5,8 @@
 :root {
   --sidebar-width: 260px;
   --font-nav: 'Jost', sans-serif;
-  --font-heading: 'Cormorant Garamond', serif;
-  --font-body: 'Lora', serif;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'EB Garamond', serif;
   --color-text: #2a2a2a;
   --color-nav: #707070;
   --color-nav-active: #000;
@@ -17,9 +17,9 @@
 /* Layout */
 body {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 18px;
   color: var(--color-text);
-  line-height: 1.75;
+  line-height: 1.8;
   background: #fff;
 }
 
@@ -106,29 +106,41 @@ nav a:hover::after, nav a.active::after { width: 100%; }
 /* Typography */
 h1 {
   font-family: var(--font-heading);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2.6rem;
   color: var(--color-text);
   margin-bottom: 1.8rem;
-  line-height: 1.2;
+  line-height: 1.15;
   letter-spacing: 0.01em;
 }
 h2 {
   font-family: var(--font-heading);
-  font-weight: 300;
-  font-size: 1.7rem;
+  font-weight: 400;
+  font-size: 1.75rem;
   color: var(--color-text);
   margin: 2.5rem 0 1rem;
+  line-height: 1.2;
 }
 h3 {
   font-family: var(--font-heading);
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin: 1.8rem 0 0.6rem;
 }
 p { margin-bottom: 1.2rem; }
 em { font-style: italic; }
-strong { font-weight: 600; }
+strong { font-weight: 500; }
+
+/* Justified prose with hyphenation — applied to reading areas only */
+.post-page .post-content,
+.book-resume,
+.home-content {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  max-width: 72ch;
+}
 
 a {
   color: var(--color-text);
@@ -270,8 +282,8 @@ table td:first-child { color: var(--color-muted); width: 40%; }
 .book-intro-text h1 {
   margin: 0 0 0.35rem;
   font-size: 2.4rem;
-  font-weight: 300;
-  letter-spacing: 0.02em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 .book-subtitle {
   font-family: var(--font-body);
