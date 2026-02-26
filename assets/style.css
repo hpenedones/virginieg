@@ -402,7 +402,7 @@ table td:first-child { color: var(--color-muted); width: 40%; }
   font-size: 1.1rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-muted);
+  color: #111;
   font-weight: 400;
   margin-bottom: 3rem;
   text-align: center;
