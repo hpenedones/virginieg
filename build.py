@@ -98,8 +98,11 @@ def parse_post(path: Path) -> dict:
     img_m = re.search(r'!\[Header image\]\(\.\.\/images\/([^)]+)\)', raw)
     header_image = f"images/{img_m.group(1)}" if img_m else None
 
+    # Strip the header image line from body so it isn't rendered twice
+    raw_body = re.sub(r'!\[Header image\]\([^)]+\)\n?', '', raw)
+
     # Short excerpt for the listing (first non-empty text after ## Contenu)
-    contenu_m = re.search(r'## Contenu\n\n([\s\S]{0,300})', raw)
+    contenu_m = re.search(r'## Contenu\n\n([\s\S]{0,300})', raw_body)
     if contenu_m:
         raw_exc = re.sub(r'[*_`#\[\]!]', '', contenu_m.group(1))
         raw_exc = re.sub(r'\(\.\.\/images\/[^)]+\)', '', raw_exc)
@@ -109,11 +112,11 @@ def parse_post(path: Path) -> dict:
     else:
         excerpt = ""
 
-    html = to_html(raw)
+    html = to_html(raw_body)
 
     return dict(
         slug=slug, order=order, title=title,
-        header_image=header_image, excerpt=excerpt, raw=raw, html=html,
+        header_image=header_image, excerpt=excerpt, raw=raw_body, html=html,
     )
 
 
