@@ -8,18 +8,17 @@
   <img src="{{ base }}{{ book.featured }}" alt="{{ book.title }}" class="book-featured">
   {% endif %}
 
-  {% if book.cover %}
-  <img src="{{ base }}{{ book.cover }}" alt="Couverture — {{ book.title }}" class="book-cover">
-  {% endif %}
-
   <div class="book-content">
     {{ book.html | safe }}
   </div>
 
-  {% if book.gallery %}
+  {% if book.cover or book.gallery %}
   <div class="book-gallery">
+    {% if book.cover %}
+    <img src="{{ base }}{{ book.cover }}" alt="Couverture — {{ book.title }}" onclick="openLightbox(this.src)">
+    {% endif %}
     {% for img in book.gallery %}
-    <img src="{{ base }}{{ img }}" alt="Intérieur — {{ book.title }}">
+    <img src="{{ base }}{{ img }}" alt="Intérieur — {{ book.title }}" onclick="openLightbox(this.src)">
     {% endfor %}
   </div>
   {% endif %}
@@ -38,4 +37,17 @@
   {% endif %}
 
 </div>
+
+<div id="lightbox" onclick="this.style.display='none'">
+  <img id="lightbox-img" src="" alt="">
+</div>
+<script>
+function openLightbox(src) {
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox').style.display = 'flex';
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') document.getElementById('lightbox').style.display = 'none';
+});
+</script>
 {% endblock %}
