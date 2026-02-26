@@ -21,5 +21,3 @@
 > « Une douce mélancolie traverse les nouvelles. Le ton est léger pour chuchoter sur des choses graves. La plume est élégante pour effleurer les peurs et les tristesses. Mais le ciel noir a un bout de bleu dans chaque texte, on se surprend à soupirer et espérer pour ces personnages attachants. Paradoxe de l'écriture qui à la fois blesse et soulage. »
 >
 > — Agnès de C. (sur amazon.fr)
-
-*[Acheter ce livre](https://virginieg.com/product/dombres-et-de-lumiere)*
