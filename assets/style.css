@@ -258,6 +258,14 @@ table td:first-child { color: var(--color-muted); width: 40%; }
 /* Hide raw markdown images that we display separately */
 .book-page .book-content img { display: none; }
 
+.book-page .book-featured {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
 .book-reviews {
   margin-top: 3rem;
   border-top: 1px solid var(--color-border);

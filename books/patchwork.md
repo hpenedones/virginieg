@@ -1,6 +1,8 @@
 # Patchwork
 *Un cheminement pavé de textes*
 
+![Featured](../images/49232-1572189361-pat-cover-1.jpg)
+
 ![Couverture](../images/1570559688-408611-pat-cover-2.jpg)
 
 ![Intérieur](../images/1570559688-955641-pat-cover-1.jpg)

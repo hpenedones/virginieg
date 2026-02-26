@@ -1,6 +1,8 @@
 # Matérialiste-minimaliste
 *Vers la meilleure version de vous-même grâce à vos objets*
 
+![Featured](../images/49232-1586184720-mat-min-cover2-1.jpg)
+
 ![Couverture](../images/1570560016-803488-mat-min-cover1.jpg)
 
 ![Intérieur](../images/1570560016-858234-mat-min-cover2.jpg)

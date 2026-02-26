@@ -58,6 +58,10 @@ def parse_book(path: Path) -> dict:
     cover_m = re.search(r'!\[Couverture\]\(\.\.\/images\/([^)]+)\)', raw)
     cover = f"images/{cover_m.group(1)}" if cover_m else None
 
+    # Featured (hero) image from avis-de-lecteurs page
+    featured_m = re.search(r'!\[Featured\]\(\.\.\/images\/([^)]+)\)', raw)
+    featured = f"images/{featured_m.group(1)}" if featured_m else None
+
     # Interior / gallery images
     gallery = [f"images/{m}" for m in
                re.findall(r'!\[Intérieur\]\(\.\.\/images\/([^)]+)\)', raw)]
@@ -70,8 +74,9 @@ def parse_book(path: Path) -> dict:
     info_m = re.search(r'(## Informations\n[\s\S]+?)(?:\n## |\Z)', raw)
     info_raw = info_m.group(1).strip() if info_m else ""
 
-    # Strip ## Informations from main body so it doesn't appear inline
+    # Strip ## Informations and ![Featured] from main body so they don't appear inline
     raw_body = re.sub(r'## Informations\n[\s\S]+?(?=\n## |\Z)', '', raw).strip()
+    raw_body = re.sub(r'!\[Featured\]\([^)]+\)\n?', '', raw_body).strip()
 
     # Résumé section
     res_m = re.search(r'## Résumé\n\n([\s\S]+?)(?:\n\n##|\Z)', raw)
@@ -83,6 +88,7 @@ def parse_book(path: Path) -> dict:
         main_title=main_title.strip(),
         subtitle=subtitle,
         cover=cover,
+        featured=featured,
         gallery=gallery,
         price=price,
         resume=resume,

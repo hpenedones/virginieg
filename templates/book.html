@@ -4,6 +4,10 @@
 <div class="book-page">
   <a href="{{ base }}livres/" class="back-link">← Livres</a>
 
+  {% if book.featured %}
+  <img src="{{ base }}{{ book.featured }}" alt="{{ book.title }}" class="book-featured">
+  {% endif %}
+
   {% if book.cover %}
   <img src="{{ base }}{{ book.cover }}" alt="Couverture — {{ book.title }}" class="book-cover">
   {% endif %}

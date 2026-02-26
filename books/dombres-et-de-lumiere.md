@@ -1,6 +1,8 @@
 # D'ombres et de Lumière
 *Recueil de nouvelles*
 
+![Featured](../images/49232-1572793936-dom-cover-1-1.jpg)
+
 ![Couverture](../images/1570559736-18357-dom-cover-2.jpg)
 
 ![Intérieur](../images/1570559736-189359-dom-cover-1.jpg)
