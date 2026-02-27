@@ -12,7 +12,7 @@ N'hésitez pas à offrir un de mes livres à un proche ou à vous-même. Pour sa
 
 Vous pouvez aussi me découvrir à travers mes billets de blog, publiés sur ce site.
 
-Si vous voulez plus d'informations et des nouvelles, rejoignez mon [cercle de lecteurs](https://virginieg.com/cercledelecteurs) , ou suivez-moi sur [Insta](https://www.instagram.com/virginieg.auteure/) ou [Facebook](https://www.facebook.com/virginieg.auteure1/) . Ou écrivez-moi sous ¨contact¨ :)
+Si vous voulez plus d'informations et des nouvelles, suivez-moi sur [Insta](https://www.instagram.com/virginieg.auteure/) ou [Facebook](https://www.facebook.com/virginieg.auteure1/) . Ou [écrivez-moi](mailto:virginie@virginieg.com) :)
 
 Bonne lecture,
 

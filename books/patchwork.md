@@ -35,5 +35,5 @@ Avez-vous déjà rêvé de tout changer, de quitter votre quotidien, votre lieu 
 
 ## Liens
 
-- [Acheter la version papier](https://virginieg.com/product/patchwork)
+- [Acheter la version papier](mailto:virginie@virginieg.com)
 - [Version ebook (Amazon Kindle)](https://www.amazon.co.uk/kindle-dbs/entity/author/B071WC8RCX)

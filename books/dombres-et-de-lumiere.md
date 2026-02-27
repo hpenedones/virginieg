@@ -38,5 +38,5 @@ L’ombre et la lumière sont-elles toujours là où on pense les trouver ? Somm
 
 ## Liens
 
-- [Acheter la version papier](https://virginieg.com/product/dombres-et-de-lumiere)
+- [Acheter la version papier](mailto:virginie@virginieg.com)
 - [Version ebook (Amazon Kindle)](https://www.amazon.co.uk/kindle-dbs/entity/author/B071WC8RCX)

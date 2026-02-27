@@ -42,5 +42,5 @@ La partie pratique vous indiquera, avec humour et pédagogie, comment vous faire
 
 ## Liens
 
-- [Acheter la version papier](https://virginieg.com/product/materialiste-minimaliste)
+- [Acheter la version papier](mailto:virginie@virginieg.com)
 - [Version ebook (Amazon Kindle)](https://www.amazon.co.uk/kindle-dbs/entity/author/B071WC8RCX)

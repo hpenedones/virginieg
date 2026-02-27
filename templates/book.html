@@ -23,7 +23,7 @@
       {% if book.liens %}
       <div class="book-buy">
         {% for label, url in book.liens %}
-        <a href="{{ url }}" class="btn-buy{% if not loop.first %} btn-secondary{% endif %}" target="_blank" rel="noopener">{{ label }}</a>
+        <a href="{{ url }}" class="btn-buy{% if not loop.first %} btn-secondary{% endif %}">{{ label }}</a>
         {% endfor %}
       </div>
       {% endif %}
