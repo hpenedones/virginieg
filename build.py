@@ -115,12 +115,25 @@ def parse_book(path: Path) -> dict:
     price_m = re.search(r'\| Prix[^|]*\|\s*(€[\d.,]+)', raw)
     price = price_m.group(1) if price_m else ""
 
-    # Publication year: most recent edition year from the Édition row
+    # Publication date: month+year of first edition
     edition_m = re.search(r'\| Édition[^|]*\|([^|]+)', raw)
     pub_year = ""
+    pub_date_sort = ""
+    MOIS_MAP = {"janvier":"01","février":"02","mars":"03","avril":"04","mai":"05","juin":"06",
+                "juillet":"07","août":"08","septembre":"09","octobre":"10","novembre":"11","décembre":"12"}
     if edition_m:
-        years = re.findall(r'\b(20\d{2}|19\d{2})\b', edition_m.group(1))
-        pub_year = years[0] if years else ""
+        edition_text = edition_m.group(1)
+        # Prefer "(1re édition: mois année)" if present, else first "mois année"
+        first_m = re.search(r'1re?\s+édition\s*:\s*(\w+\s+\d{4})', edition_text)
+        if first_m:
+            pub_year = first_m.group(1).strip()
+        else:
+            any_m = re.search(r'([a-zéû]+\s+\d{4})', edition_text, re.IGNORECASE)
+            pub_year = any_m.group(1).strip() if any_m else ""
+        if pub_year:
+            parts = pub_year.split()
+            if len(parts) == 2:
+                pub_date_sort = f"{parts[1]}-{MOIS_MAP.get(parts[0].lower(), '00')}"
 
     # Extract ## Informations, ## Disponibilité, ## Liens (rendered separately at bottom)
     info_m = re.search(r'(## Informations\n[\s\S]+?)(?:\n## |\Z)', raw)
@@ -159,6 +172,7 @@ def parse_book(path: Path) -> dict:
         gallery=gallery,
         price=price,
         pub_year=pub_year,
+        pub_date_sort=pub_date_sort,
         resume=resume,
         liens=liens_list,
         dispo_text=dispo_text,
@@ -239,7 +253,8 @@ def build():
     render("home.html", SITE / "index.html", content=hp_html, current_page="home", base="")
 
     # ── Books ──
-    books = [parse_book(p) for p in sorted((ROOT / "books").glob("*.md"))]
+    books = [parse_book(p) for p in (ROOT / "books").glob("*.md")]
+    books.sort(key=lambda b: b["pub_date_sort"])
     render("books_list.html", SITE / "livres" / "index.html",
            books=books, current_page="livres", base="../")
     for book in books:
