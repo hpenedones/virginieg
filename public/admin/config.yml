@@ -15,7 +15,7 @@ collections:
     create: true
     slug: "{{slug}}"
     identifier_field: title
-    summary: "{{title}} — {{date}}"
+    summary: "{{date}} - {{title}}"
     sortable_fields: ['date', 'title']
     fields:
       - label: Titre
@@ -32,7 +32,7 @@ collections:
         format: "YYYY-MM-DD"
         date_format: "DD/MM/YYYY"
         time_format: false
-        required: false
+        required: true
       - label: Image d'en-tête
         name: header_image
         widget: image
