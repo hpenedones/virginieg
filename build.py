@@ -115,6 +115,13 @@ def parse_book(path: Path) -> dict:
     price_m = re.search(r'\| Prix[^|]*\|\s*(€[\d.,]+)', raw)
     price = price_m.group(1) if price_m else ""
 
+    # Publication year: most recent edition year from the Édition row
+    edition_m = re.search(r'\| Édition[^|]*\|([^|]+)', raw)
+    pub_year = ""
+    if edition_m:
+        years = re.findall(r'\b(20\d{2}|19\d{2})\b', edition_m.group(1))
+        pub_year = years[0] if years else ""
+
     # Extract ## Informations, ## Disponibilité, ## Liens (rendered separately at bottom)
     info_m = re.search(r'(## Informations\n[\s\S]+?)(?:\n## |\Z)', raw)
     info_raw = info_m.group(1).strip() if info_m else ""
@@ -151,6 +158,7 @@ def parse_book(path: Path) -> dict:
         featured=featured,
         gallery=gallery,
         price=price,
+        pub_year=pub_year,
         resume=resume,
         liens=liens_list,
         dispo_text=dispo_text,

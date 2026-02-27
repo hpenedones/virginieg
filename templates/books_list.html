@@ -10,7 +10,7 @@
     {% endif %}
     <h2>{{ book.main_title }}</h2>
     {% if book.subtitle %}<p class="card-subtitle">{{ book.subtitle }}</p>{% endif %}
-    {% if book.price %}<p class="card-price">{{ book.price }}</p>{% endif %}
+    {% if book.pub_year %}<p class="card-price">{{ book.pub_year }}</p>{% endif %}
   </a>
   {% endfor %}
 </div>
