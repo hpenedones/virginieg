@@ -16,6 +16,11 @@ collections:
     slug: "{{order}}-{{slug}}"
     identifier_field: title
     summary: "{{title}} {{filename}}"
+    sortable_fields:
+      fields: [order, title]
+      default:
+        field: order
+        direction: Descending
     fields:
       - label: Titre
         name: title
@@ -39,6 +44,7 @@ collections:
     label_singular: Livre
     folder: books
     create: false
+    summary: "{{title}} {{filename}}"
     fields:
       - label: Titre
         name: title
