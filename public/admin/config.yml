@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: hpenedones/virginieg
   branch: main
+  base_url: https://virginieg.pages.dev
+  auth_endpoint: api/auth
 
 media_folder: images
 public_folder: images
