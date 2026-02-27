@@ -9,6 +9,7 @@ import os, re, shutil
 from pathlib import Path
 import markdown as md_lib
 from jinja2 import Environment, FileSystemLoader
+from PIL import Image, ImageOps
 
 ROOT    = Path(__file__).parent
 SITE    = ROOT / "_site"
@@ -18,6 +19,36 @@ env = Environment(loader=FileSystemLoader(str(TMPL)), autoescape=False)
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
+
+def optimise_images(src_dir: Path, dst_dir: Path, max_width=1400, quality=82):
+    """Resize and compress images, saving to dst_dir."""
+    dst_dir.mkdir(parents=True, exist_ok=True)
+    total_in = total_out = 0
+    for src in src_dir.iterdir():
+        dst = dst_dir / src.name
+        if src.suffix.lower() not in ('.jpg', '.jpeg', '.png', '.webp'):
+            shutil.copy2(src, dst)
+            continue
+        try:
+            img = Image.open(src)
+            img = ImageOps.exif_transpose(img)  # fix rotation
+            if img.width > max_width:
+                ratio = max_width / img.width
+                img = img.resize((max_width, int(img.height * ratio)), Image.LANCZOS)
+            save_kwargs = {"optimize": True}
+            if src.suffix.lower() in ('.jpg', '.jpeg'):
+                save_kwargs["quality"] = quality
+                if img.mode in ("RGBA", "P"):
+                    img = img.convert("RGB")
+            total_in += src.stat().st_size
+            img.save(dst, **save_kwargs)
+            total_out += dst.stat().st_size
+        except Exception as e:
+            print(f"  ⚠️  Could not process {src.name}: {e}")
+            shutil.copy2(src, dst)
+    saved = total_in - total_out
+    print(f"    🖼️  Images: {total_in//1024//1024}MB → {total_out//1024//1024}MB (saved {saved//1024//1024}MB)")
+
 
 def render(template_name, output_path, **ctx):
     tmpl = env.get_template(template_name)
@@ -179,7 +210,7 @@ def build():
     SITE.mkdir()
 
     # Static assets
-    shutil.copytree(ROOT / "images", SITE / "images")
+    optimise_images(ROOT / "images", SITE / "images")
     shutil.copytree(ROOT / "assets", SITE / "assets")
     # Copy static public/ files (e.g. Decap CMS admin)
     public = ROOT / "public"
