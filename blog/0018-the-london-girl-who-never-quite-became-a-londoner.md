@@ -1,6 +1,7 @@
 ---
 title: The London girl who never quite became a Londoner
 order: 18
+date: '2016-02-18'
 ---
 
 Il y a quelques années, on a déménagé à Londres. Ca allait être temporaire, ça allait être nouveau, ça allait nous sortir de notre zone de confort. Tout ça c'est fait, sauf le côté ¨temporaire¨. Ma meilleure moitié se plaît tellement dans son job qu'on va rester encore un peu. Et puisqu'on a adopté un Zoo… J'ai donc décidé que, au lieu de me morfondre et de bassiner tout le monde avec cette pauvre Ninie qui ne se fait pas à la grande ville, je vais plutôt en tirer quelques leçons, de vie et de création et partager sur ce blog. Histoire qu'on rigole.  

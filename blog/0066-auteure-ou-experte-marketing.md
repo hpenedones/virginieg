@@ -2,6 +2,7 @@
 title: Auteure ou experte marketing
 order: 66
 header_image: images/49232-1574617892-apple-devices-books-business-coffee-572056.jpg
+date: '2019-02-20'
 ---
 
 Pour ceux d'entre vous qui me suivent, vous avez peut-être noté un silence radio depuis l'an dernier. Ce n'est pas parce que je manque d'inspiration.

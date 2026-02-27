@@ -2,6 +2,7 @@
 title: Muselez la muselière
 order: 31
 header_image: images/49232-1572177452-download-1.png
+date: '2017-01-18'
 ---
 
 Connaissez-vous cette petite voix cassante qui vit au coin de nos têtes et passe son temps à nous juger en chuchotant à notre oreille à tout heure, sauf éventuellement quand on est occupé à juger les autres.

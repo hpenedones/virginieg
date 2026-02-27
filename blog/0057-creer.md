@@ -2,6 +2,7 @@
 title: Créer
 order: 57
 header_image: images/49232-1570655220-depositphotos-39717501-original.jpg
+date: '2018-05-31'
 ---
 
 Jouer au sioux avec son angle, son point de vue, ce que l'on cherche à dire au juste.  

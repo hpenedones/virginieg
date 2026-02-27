@@ -1,6 +1,7 @@
 ---
 title: Finding your Purpose
 order: 48
+date: '2018-04-06'
 ---
 
 *Source: [Greenmoxie.com](https://www.greenmoxie.com/finding-your-purpose-by-hunter-s-thompson/?utm_source=THE+ESCAPE+SCHOOL+2.0&utm_campaign=162385885c-EMAIL_CAMPAIGN_2017_11_23&utm_medium=email&utm_term=0_1a030bd8e4-162385885c-191257369)*

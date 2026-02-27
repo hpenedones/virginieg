@@ -2,6 +2,7 @@
 title: Derrière les mots
 order: 38
 header_image: images/49232-1575592681-pencil-education-pencil-sharpener-art-159731.jpeg
+date: '2017-06-12'
 ---
 
 Pourquoi me suivez-vous sans relâche? Qui êtes-vous vraiment? Pourquoi êtes-vous si nombreux à venir me voir?

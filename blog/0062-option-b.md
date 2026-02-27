@@ -1,6 +1,7 @@
 ---
 title: Option B
 order: 62
+date: '2018-06-14'
 ---
 
 Je ne me souviens pas de la dernière fois que j'ai été aussi mal, que je me suis sentie aussi nulle, monstrueuse, conne, stupide, et je m'arrête là par souci d'économie. Pour vous autant que pour moi.

@@ -1,6 +1,7 @@
 ---
 title: Mes chatons, forever
 order: 1
+date: '2016-07-05'
 ---
 
 Petit nez rose, petit nez gris,  

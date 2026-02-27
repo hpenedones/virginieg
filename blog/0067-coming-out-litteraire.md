@@ -2,6 +2,7 @@
 title: Coming out... littéraire
 order: 67
 header_image: images/49232-1576092831-aung-soe-min-f6ux-it1n7g-unsplash.jpg
+date: '2019-06-01'
 ---
 
 [Je suis un auteur](https://virginieg.com/billets-de-blog/derriere-les-mots). Et quand j'écris je ne pense jamais aux lecteurs.

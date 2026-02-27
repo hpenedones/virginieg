@@ -2,6 +2,7 @@
 title: Le temps qui passe
 order: 42
 header_image: images/49232-1570656487-fabrizio-verrecchia-180315.jpg
+date: '2017-11-20'
 ---
 
 Le temps est une notion intéressante, parfois un peu perturbante si on y pense.

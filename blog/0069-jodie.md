@@ -2,6 +2,7 @@
 title: Jodie
 order: 69
 header_image: images/49232-1602513611-eric-ward-akt1bnnummk-unsplash-1.jpg
+date: '2019-08-01'
 ---
 
 *Note de l'auteure: ce billet a été écrit en janvier 2019 et publié en juin 2020.*

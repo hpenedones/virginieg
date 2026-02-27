@@ -1,6 +1,7 @@
 ---
 title: The Icarus Deception - Fiche de lecture
 order: 13
+date: '2016-12-05'
 ---
 
 Je me suis inscrite à un cours d'écriture. 2 ans à raison d'un weekend (très chargé) par mois, sans compter les ¨devoirs¨ à compléter entre les rencontres.

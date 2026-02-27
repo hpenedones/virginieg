@@ -2,6 +2,7 @@
 title: Choisir l'art
 order: 50
 header_image: images/49232-1570655731-depositphotos-25648661-xl-2015.jpg
+date: '2018-05-03'
 ---
 
 Choisir l'art c'est se lever, se coucher et être debout dans le doute. C'est chaque jour se demander pourquoi, se demander comment, se demander pourquoi pas.

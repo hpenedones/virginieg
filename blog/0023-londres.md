@@ -1,6 +1,7 @@
 ---
 title: Londres
 order: 23
+date: '2016-02-25'
 ---
 
 Londres m'énerve. Profondément. Trois ans qu'on est ici et je crois que je ne m'y ferai juste jamais. Le prix des logements et tout ce que cela engendre, la basse qualité des constructions (et pas juste d'un point de vue idéologique: hier je suis restée enfermée dehors parce que la clé refusait de tourner dans la serrure. A préciser que nous avons fait changer la serrure précédente il y a deux semaines pour exactement la même raison.), la grisaille, la façon sournoise de vous vendre un bien immobilier sans vraiment vous le vendre, pour une poignée de décennies, le métro, la foule, les touristes, les rats, les petites et grandes arnaques, le niveau de service.

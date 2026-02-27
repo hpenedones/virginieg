@@ -1,6 +1,7 @@
 ---
 title: Parole parole parole
 order: 6
+date: '2016-06-14'
 ---
 
 J'aime apprendre et parler les langues étrangères. Premièrement parce qu'il paraîtrait que cela tient Alzheimer à distance. Plus sérieusement, le fait d'entrer dans une autre culture par la langue n'a rien de comparable à mon sens.

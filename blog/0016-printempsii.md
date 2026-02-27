@@ -1,6 +1,7 @@
 ---
 title: Le cric (Printemps II)
 order: 16
+date: '2016-07-01'
 ---
 
 Il était tard, il faisait nuit. Paul avait hâte d'arriver chez lui après une semaine éreintante.
