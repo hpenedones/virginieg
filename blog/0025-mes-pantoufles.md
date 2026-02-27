@@ -1,6 +1,5 @@
 ---
 title: Mes pantoufles
-order: 25
 date: '2016-02-28'
 visible: false
 ---

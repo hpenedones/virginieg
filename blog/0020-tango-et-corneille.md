@@ -1,6 +1,5 @@
 ---
 title: Tango et Corneille
-order: 20
 date: '2016-02-21'
 visible: false
 ---

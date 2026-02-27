@@ -1,6 +1,5 @@
 ---
 title: Le cric (Printemps II)
-order: 16
 date: '2016-07-01'
 visible: false
 ---

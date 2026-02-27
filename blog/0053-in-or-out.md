@@ -1,6 +1,5 @@
 ---
 title: In or out?
-order: 53
 header_image: images/49232-1570655544-depositphotos-8652730-original.jpg
 date: '2018-05-14'
 visible: true

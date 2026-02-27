@@ -1,6 +1,5 @@
 ---
 title: Choisir d'écrire
-order: 51
 header_image: images/49232-1570655672-depositphotos-2338839-xl-2015.jpg
 date: '2018-05-03'
 visible: true

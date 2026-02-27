@@ -1,6 +1,5 @@
 ---
 title: Muselez la muselière
-order: 31
 header_image: images/49232-1572177452-download-1.png
 date: '2017-01-18'
 visible: true

@@ -1,6 +1,5 @@
 ---
 title: Elle peint
-order: 70
 header_image: images/49232-1606137943-oliver-alxndr-maf8d0gnfpg-unsplash.jpg
 date: '2019-09-01'
 visible: true

@@ -1,6 +1,5 @@
 ---
 title: Practice makes perfect
-order: 35
 header_image: images/49232-1572176990-potter-1028843-1920-1.jpg
 date: '2017-03-29'
 visible: true

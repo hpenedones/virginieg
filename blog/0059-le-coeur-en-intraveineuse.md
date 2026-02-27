@@ -1,6 +1,5 @@
 ---
 title: Le coeur en intraveineuse
-order: 59
 header_image: images/49232-1570655055-guillaume-flandre-434031-unsplash.jpg
 date: '2018-06-05'
 visible: true

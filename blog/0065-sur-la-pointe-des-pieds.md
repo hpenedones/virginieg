@@ -1,6 +1,5 @@
 ---
 title: Sur la pointe des pieds
-order: 65
 header_image: images/49232-1570653367-mat-min-cover1.jpg
 date: '2018-11-17'
 visible: true

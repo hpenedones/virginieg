@@ -1,6 +1,5 @@
 ---
 title: Le tableau
-order: 17
 date: '2016-08-01'
 visible: false
 ---

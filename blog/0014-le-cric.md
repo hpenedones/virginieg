@@ -1,6 +1,5 @@
 ---
 title: Le cric
-order: 14
 header_image: images/49232-1572178418-pat-cover-1.jpg
 visible: true
 ---

@@ -1,6 +1,5 @@
 ---
 title: Un pied devant l'autre
-order: 22
 date: '2016-02-24'
 visible: false
 ---

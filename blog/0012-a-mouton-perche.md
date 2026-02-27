@@ -1,6 +1,5 @@
 ---
 title: À mouton perché
-order: 12
 date: '2016-07-28'
 visible: false
 ---

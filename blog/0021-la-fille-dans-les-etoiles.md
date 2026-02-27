@@ -1,6 +1,5 @@
 ---
 title: La fille dans les étoiles
-order: 21
 date: '2016-02-22'
 visible: false
 ---

@@ -1,6 +1,5 @@
 ---
 title: Jodie
-order: 69
 header_image: images/49232-1602513611-eric-ward-akt1bnnummk-unsplash-1.jpg
 date: '2019-08-01'
 visible: true

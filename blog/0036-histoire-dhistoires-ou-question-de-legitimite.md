@@ -1,6 +1,5 @@
 ---
 title: Histoire d'histoires... ou question de légitimité
-order: 36
 header_image: images/49232-1572176938-cloth-cute-plush-toy-33196.jpg
 date: '2017-06-01'
 visible: true

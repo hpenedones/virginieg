@@ -1,6 +1,5 @@
 ---
 title: Parole parole parole
-order: 6
 date: '2016-06-14'
 visible: false
 ---

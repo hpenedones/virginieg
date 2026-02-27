@@ -1,6 +1,5 @@
 ---
 title: Une oasis dans le désert
-order: 8
 date: '2016-06-23'
 visible: false
 ---

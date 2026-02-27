@@ -1,6 +1,5 @@
 ---
 title: Derrière les mots
-order: 38
 header_image: images/49232-1575592681-pencil-education-pencil-sharpener-art-159731.jpeg
 date: '2017-06-12'
 visible: true

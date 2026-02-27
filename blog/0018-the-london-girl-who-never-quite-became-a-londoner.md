@@ -1,6 +1,5 @@
 ---
 title: The London girl who never quite became a Londoner
-order: 18
 date: '2016-02-18'
 visible: false
 ---

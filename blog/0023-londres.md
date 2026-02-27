@@ -1,6 +1,5 @@
 ---
 title: Londres
-order: 23
 date: '2016-02-25'
 visible: false
 ---

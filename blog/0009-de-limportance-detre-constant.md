@@ -1,6 +1,5 @@
 ---
 title: De l'importance d'être constant
-order: 9
 date: '2016-07-04'
 visible: false
 ---

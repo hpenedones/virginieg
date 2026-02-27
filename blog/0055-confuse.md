@@ -1,6 +1,5 @@
 ---
 title: Confuse
-order: 55
 header_image: images/49232-1570655365-depositphotos-51362759-original.jpg
 date: '2018-05-23'
 visible: true

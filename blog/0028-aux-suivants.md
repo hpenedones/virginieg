@@ -1,6 +1,5 @@
 ---
 title: Aux suivants!
-order: 28
 header_image: images/49232-1572178374-pat-cover-1.jpg
 date: '2017-10-06'
 visible: true

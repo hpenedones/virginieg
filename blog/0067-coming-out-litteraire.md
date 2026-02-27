@@ -1,6 +1,5 @@
 ---
 title: Coming out... littéraire
-order: 67
 header_image: images/49232-1576092831-aung-soe-min-f6ux-it1n7g-unsplash.jpg
 date: '2019-06-01'
 visible: true

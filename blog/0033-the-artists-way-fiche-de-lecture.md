@@ -1,6 +1,5 @@
 ---
 title: The artist's way - Fiche de lecture
-order: 33
 header_image: images/49232-1572177007-knowledge-1052010.jpg
 date: '2017-02-15'
 visible: true

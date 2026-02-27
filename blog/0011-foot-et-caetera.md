@@ -1,6 +1,5 @@
 ---
 title: Foot et caetera
-order: 11
 date: '2016-07-11'
 visible: false
 ---

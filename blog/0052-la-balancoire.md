@@ -1,6 +1,5 @@
 ---
 title: La balançoire
-order: 52
 header_image: images/49232-1570655592-depositphotos-135675266-xl-2015.jpg
 date: '2018-05-14'
 visible: true

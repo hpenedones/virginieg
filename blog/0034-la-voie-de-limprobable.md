@@ -1,6 +1,5 @@
 ---
 title: La voie de l'improbable
-order: 34
 header_image: images/49232-1572177726-rhondak-native-florida-folk-artist-83553-1.jpg
 date: '2017-03-15'
 visible: true

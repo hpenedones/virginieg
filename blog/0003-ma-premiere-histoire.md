@@ -1,6 +1,5 @@
 ---
 title: Ma première histoire
-order: 3
 date: '2016-04-15'
 visible: false
 ---

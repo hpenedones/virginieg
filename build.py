@@ -180,7 +180,6 @@ def parse_post(path: Path) -> dict:
             body = raw[end+3:].lstrip("\n")
 
     title        = fm.get("title") or slug
-    order        = int(fm.get("order") or 0)
     header_image = fm.get("header_image") or None
     date         = fm.get("date") or None   # may be a datetime.date object from YAML
     visible      = bool(fm.get("visible", bool(header_image)))
@@ -198,7 +197,7 @@ def parse_post(path: Path) -> dict:
     html = to_html(body)
 
     return dict(
-        slug=slug, order=order, title=title, visible=visible,
+        slug=slug, title=title, visible=visible,
         header_image=header_image, excerpt=excerpt, html=html,
         date=date, date_str=fmt_date_fr(date),
     )

@@ -1,6 +1,5 @@
 ---
 title: Un plumage d'écrivain
-order: 64
 header_image: images/49232-1570654608-david-clode-341225-unsplash-1.jpg
 date: '2018-10-24'
 visible: true

@@ -1,6 +1,5 @@
 ---
 title: Nettoyages de printemps
-order: 2
 date: '2016-03-29'
 visible: false
 ---

@@ -1,6 +1,5 @@
 ---
 title: The Icarus Deception - Fiche de lecture
-order: 13
 date: '2016-12-05'
 visible: false
 ---

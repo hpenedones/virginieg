@@ -1,6 +1,5 @@
 ---
 title: La patte en tricot... ou pas
-order: 26
 date: '2016-03-02'
 visible: false
 ---

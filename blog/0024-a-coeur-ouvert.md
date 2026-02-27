@@ -1,6 +1,5 @@
 ---
 title: À coeur ouvert
-order: 24
 date: '2016-02-27'
 visible: false
 ---

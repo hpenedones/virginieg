@@ -1,6 +1,5 @@
 ---
 title: Finding your Purpose
-order: 48
 date: '2018-04-06'
 visible: false
 ---

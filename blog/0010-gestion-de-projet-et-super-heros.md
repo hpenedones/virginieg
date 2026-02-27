@@ -1,6 +1,5 @@
 ---
 title: Gestion de projet et super-héros
-order: 10
 date: '2016-03-09'
 visible: false
 ---

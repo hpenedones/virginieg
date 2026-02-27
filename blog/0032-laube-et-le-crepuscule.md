@@ -1,6 +1,5 @@
 ---
 title: L'aube et le crépuscule
-order: 32
 header_image: images/49232-1572177771-screen-shot-2017-04-11-at-20-17-16.png
 date: '2017-02-10'
 visible: true

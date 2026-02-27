@@ -1,6 +1,5 @@
 ---
 title: Moi j'aime pas les humains...
-order: 46
 header_image: images/49232-1570656031-depositphotos-100707320-original.jpg
 date: '2018-03-18'
 visible: true

@@ -1,6 +1,5 @@
 ---
 title: Les Bonhommes de Mercurochrome
-order: 19
 date: '2016-02-20'
 visible: false
 ---

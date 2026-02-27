@@ -1,6 +1,5 @@
 ---
 title: Le revolver dort
-order: 54
 header_image: images/49232-1570655462-depositphotos-140683730-original.jpg
 date: '2018-05-19'
 visible: true

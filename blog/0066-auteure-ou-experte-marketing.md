@@ -1,6 +1,5 @@
 ---
 title: Auteure ou experte marketing
-order: 66
 header_image: images/49232-1574617892-apple-devices-books-business-coffee-572056.jpg
 date: '2019-02-20'
 visible: true

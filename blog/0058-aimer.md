@@ -1,6 +1,5 @@
 ---
 title: Aimer
-order: 58
 header_image: images/49232-1570655134-depositphotos-130508812-original.jpg
 date: '2018-05-31'
 visible: true

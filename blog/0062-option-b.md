@@ -1,6 +1,5 @@
 ---
 title: Option B
-order: 62
 date: '2018-06-14'
 visible: false
 ---

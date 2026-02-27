@@ -1,6 +1,5 @@
 ---
 title: Et disparaître
-order: 61
 header_image: images/49232-1570654855-eberhard-grossgasteiger-545770-unsplash.jpg
 date: '2018-06-12'
 visible: true

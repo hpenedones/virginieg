@@ -1,6 +1,5 @@
 ---
 title: Entre un au revoir et un adieu
-order: 4
 date: '2016-05-05'
 visible: false
 ---

@@ -1,6 +1,5 @@
 ---
 title: En attendant Godot... ou le facteur
-order: 7
 date: '2016-06-15'
 visible: false
 ---

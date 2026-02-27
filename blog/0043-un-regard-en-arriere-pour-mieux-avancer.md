@@ -1,6 +1,5 @@
 ---
 title: Un regard en arrière pour mieux avancer
-order: 43
 header_image: images/49232-1570656416-depositphotos-92498896-original.jpg
 date: '2017-12-21'
 visible: true
