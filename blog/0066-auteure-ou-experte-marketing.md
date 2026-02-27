@@ -39,8 +39,4 @@ Rendez-vous bientôt sur Instagram, @virginieg.auteure.
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 Crédit d'image: [Campaign Creators](https://unsplash.com/photos/RSc6D7bO0fA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) sur [Unsplash](https://unsplash.com/search/photos/marketing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

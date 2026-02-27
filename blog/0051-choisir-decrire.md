@@ -33,8 +33,4 @@ Et puis choisir d'écrire, ¨c'est déjà mettre du noir sur du blanc¨ (S. Mall
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 *Crédit d'image: Depositphoto*

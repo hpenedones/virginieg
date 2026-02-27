@@ -32,8 +32,4 @@ Parce qu'être écrivain, ce n'est pas juste écrire.
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 Crédit d'image: [David Clode](https://unsplash.com/photos/Haz8prUXrI4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/feathers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

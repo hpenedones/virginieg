@@ -42,8 +42,4 @@ Mon corps et âme eux aussi sont confus. Que je n'aie toujours pas compris que m
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 *Crédit d'image: Depositphoto*

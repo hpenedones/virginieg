@@ -26,7 +26,3 @@ C'est sur la pointe des pieds que mon livre "Matérialiste-minimaliste, vers la 
 C'est le cœur léger que je m'envole de mon côté vers d'autres contrées, d'autres projets.
 
 \*\*\*
-
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*

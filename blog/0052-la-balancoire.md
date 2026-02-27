@@ -35,8 +35,4 @@ Et la petite a tant aimé, cette session de balançoire.
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 *Crédit d'image: Depositphoto*

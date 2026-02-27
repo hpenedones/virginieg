@@ -17,8 +17,4 @@ So my dear friend never forget what your eyes see you can obtain, what your hear
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 *Crédit d'image:[chuttersnap,](https://unsplash.com/photos/rLm4Wq96h_0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)[Unsplash](https://unsplash.com/search/photos/faint-fire?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*

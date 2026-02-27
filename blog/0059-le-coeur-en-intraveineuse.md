@@ -102,8 +102,4 @@ Merci Bordeaux, merci [Anaël](https://ecrire.tv/about/), merci Monsieur Lauren
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 *Crédit d'image: [Guillaume Flandre, Unsplash](https://unsplash.com/@gflandre?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge)*

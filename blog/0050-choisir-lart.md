@@ -52,8 +52,4 @@ Choisir l'art c'est être debout dans le doute, lumineux dans les questionnement
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 *Crédit d'image: Depositphoto*

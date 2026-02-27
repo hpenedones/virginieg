@@ -31,8 +31,4 @@ L'homme, le père repose le revolver dans le coffre du galetas et ferme les yeux
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 *Crédit d'image: Depositphoto*

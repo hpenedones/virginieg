@@ -39,8 +39,4 @@ Prends soin de toi.
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 Crédit d'image: [eberhard grossgasteiger](https://unsplash.com/photos/FhdN5QVrBfY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

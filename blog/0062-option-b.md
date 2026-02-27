@@ -59,8 +59,4 @@ Ah oui, et aujourd'hui je n'ai pas mal à l'épaule. Allez comprendre!
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 Crédit d'image: [Steve from Pexels](https://www.pexels.com/@steve-130217)

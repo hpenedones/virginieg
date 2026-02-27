@@ -69,8 +69,4 @@ Aime-moi parce que c'est cela qui t'élève, m'élève et nous élève dans Notr
 
 \*\*\*
 
-Rejoignez mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 *Crédit d'image: Depositphoto*

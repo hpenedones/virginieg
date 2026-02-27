@@ -52,8 +52,4 @@ C'est ainsi que ce matin, j'ai rendu ma famille.
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 *Crédit d'image: Depositphoto*

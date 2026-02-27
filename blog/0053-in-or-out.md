@@ -71,8 +71,4 @@ Me faire regarder comme une bête curieuse et me donner un*high five* Ã  moi-
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 *Crédit d'image: Depositphoto*

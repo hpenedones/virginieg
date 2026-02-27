@@ -52,8 +52,4 @@ Le spectacle touche à sa fin, les artistes se retrouvent en piste pour un derni
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 *Crédit d'image: [fer gomez](https://unsplash.com/@fergomez?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) sur [Unsplash](https://unsplash.com/s/photos/circus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*

@@ -78,8 +78,4 @@ Et puis les fresques lumineuses de la Chapelle Sixtine dont s'élançait majestu
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 Crédit d'image: [Willian West](https://unsplash.com/photos/Y5qJKfg0hJ8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/rome?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

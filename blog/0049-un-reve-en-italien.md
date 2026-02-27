@@ -52,8 +52,4 @@ Grazie Italia, grazie [Pizza Capperi Bordeaux](http://www.capperi.fr/), grazie 
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 *Crédit d'image: Depositphoto*

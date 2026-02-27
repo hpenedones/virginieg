@@ -45,8 +45,4 @@ Ps Retrouvez-moi sur [Instagram](https://www.instagram.com/virginieg.auteure/),
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 Crédits d'image: [Aung Soe Min](https://unsplash.com/@kaunglay1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) sur [Unsplash](https://unsplash.com/s/photos/book-coming-out?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

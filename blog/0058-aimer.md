@@ -120,8 +120,4 @@ Se plaire, rire, s'exaspérer, danser, s'engueuler et avancer ensemble, main dan
 
 \*\*\*
 
-Pour rejoindre mon [Club de lecteurs](http://virginieg.com/clubdelecteurs).
-
-\*\*\*
-
 *Crédit d'image: Depositphoto*
