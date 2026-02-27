@@ -3,6 +3,7 @@ title: Histoire d'histoires... ou question de légitimité
 order: 36
 header_image: images/49232-1572176938-cloth-cute-plush-toy-33196.jpg
 date: '2017-06-01'
+visible: true
 ---
 
 En descendant la rue de Bourg jeudi matin, Sophie se colle le pied sur un chewing gum encore frais. Elle pousse un juron, se décolle et continue sa route alors que l'amas rose laisse un filet de bave fin sur les pavés.

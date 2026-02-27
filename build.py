@@ -183,6 +183,7 @@ def parse_post(path: Path) -> dict:
     order        = int(fm.get("order") or 0)
     header_image = fm.get("header_image") or None
     date         = fm.get("date") or None   # may be a datetime.date object from YAML
+    visible      = bool(fm.get("visible", bool(header_image)))
 
     # Short excerpt: first ~180 chars of body text
     raw_exc = body
@@ -197,7 +198,7 @@ def parse_post(path: Path) -> dict:
     html = to_html(body)
 
     return dict(
-        slug=slug, order=order, title=title,
+        slug=slug, order=order, title=title, visible=visible,
         header_image=header_image, excerpt=excerpt, html=html,
         date=date, date_str=fmt_date_fr(date),
     )
@@ -249,9 +250,9 @@ def build():
                      "info_html": info_html, "reviews_html": reviews_html},
                current_page="livres", base="../../")
 
-    # ── Blog posts ── (newest first in listing; only posts with a header image)
+    # ── Blog posts ── (newest first in listing; only visible posts)
     posts = [parse_post(p) for p in sorted((ROOT / "blog").glob("*.md"), reverse=True)]
-    posts = [p for p in posts if p["header_image"]]
+    posts = [p for p in posts if p["visible"]]
     posts.sort(key=lambda p: str(p["date"] or "0000-00-00"), reverse=True)
     render("posts_list.html", SITE / "textes" / "index.html",
            posts=posts, current_page="textes", base="../")

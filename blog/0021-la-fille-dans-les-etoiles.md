@@ -2,6 +2,7 @@
 title: La fille dans les étoiles
 order: 21
 date: '2016-02-22'
+visible: false
 ---
 
 Ma famille est un drôle d'animal. La complexité et l'intensité des relations et interactions entre ses membres me dépasse. Il y a une quinzaine d'années une de mes petites cousines a fait un dessin pour ma grand-mère, comme cela se fait à l'occasion de fêtes, d'anniversaires ou juste pour le plaisir. Ma grand-mère ayant près de dix petits enfants, elle ne garde pas tous les dessins. Ou pas toujours très longtemps. Celui-ci a cependant passé à la catégorie un peu plus intemporelle de ceux qui sont encadrés et pendus au mur. Peut-être était-ce dû au titre du dessin, gauchement écrit sur le bas de la feuille: Notre famille.

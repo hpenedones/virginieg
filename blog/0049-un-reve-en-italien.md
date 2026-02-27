@@ -3,6 +3,7 @@ title: Un rêve en italien
 order: 49
 header_image: images/49232-1570655793-depositphotos-183538272-m-2015.jpg
 date: '2018-04-08'
+visible: true
 ---
 
 Je ne suis pas bloggeuse culinaire, et pour cause. J'aime manger mais suis assez difficile, je n'ai aucune patience ni dans la vie en général ni en particulier quand il s'agit d'attendre qu'on me prépare et m'apporte à manger.

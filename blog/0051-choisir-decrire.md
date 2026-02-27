@@ -3,6 +3,7 @@ title: Choisir d'écrire
 order: 51
 header_image: images/49232-1570655672-depositphotos-2338839-xl-2015.jpg
 date: '2018-05-03'
+visible: true
 ---
 
 C'est tendre l'oreille et faire silence pour espérer entendre bruisser les mots alentours. C'est se mettre à son clavier et suer chacun d'eux. C'est se faire surprendre par un jet froid de mots qui débarquent inopinément, en puissance max, se raidir, les considérer d'un air indigné puis se jeter sur son clavier, les attraper au vol, savourer la douche revigorante et en redemander sans que jamais cela ne revienne.

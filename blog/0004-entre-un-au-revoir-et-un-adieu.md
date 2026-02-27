@@ -2,6 +2,7 @@
 title: Entre un au revoir et un adieu
 order: 4
 date: '2016-05-05'
+visible: false
 ---
 
 Hier la maman d'un proche à moi nous a quittés. Sans préavis, sans grandes pompes cette charmante dame est partie. Ses proches s'y préparaient depuis quelques temps: à plus de quatre vingt quinze ans c'est dans l'ordre des choses et des générations que de tirer sa révérence. De le penser ne rend pas les choses moins douloureuses pour ceux qui restent.

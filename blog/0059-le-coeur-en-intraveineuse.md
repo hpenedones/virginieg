@@ -3,6 +3,7 @@ title: Le coeur en intraveineuse
 order: 59
 header_image: images/49232-1570655055-guillaume-flandre-434031-unsplash.jpg
 date: '2018-06-05'
+visible: true
 ---
 
 Seule dans le box numéro 6 des urgences de l'hôpital de Saint-André dans un pays qui n'est pas le mien, je regarde défiler douleur, peur, regret, tristesse et presque deux ans de ma vie.

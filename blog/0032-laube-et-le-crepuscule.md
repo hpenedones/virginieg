@@ -3,6 +3,7 @@ title: L'aube et le crépuscule
 order: 32
 header_image: images/49232-1572177771-screen-shot-2017-04-11-at-20-17-16.png
 date: '2017-02-10'
+visible: true
 ---
 
 Il y a des gens pour qui les lignes téléphoniques ne fonctionnent que dans un sens. Mamy Gigi ne se contente pas de juste faire partie de ces gens-là, le concept c'est elle qui l'a inventé. C'est simple elle n'appelle jamais. Pas vrai, elle appelle aux anniversaires ou pour remercier. Sinon pour le reste, elle se contente de ronchonner que je — ou n'importe le/laquel/le d'entre nous, enfants ou petits-enfants — ne l'a pas appelée depuis x jours, tout en nous expliquant que, bien sûr, ce n'est pas grave elle dit juste ça en passant.

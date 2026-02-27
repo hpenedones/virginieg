@@ -38,6 +38,11 @@ collections:
         date_format: "DD/MM/YYYY"
         time_format: false
         required: false
+      - label: Visible
+        name: visible
+        widget: boolean
+        default: true
+        hint: "Si désactivé, le billet ne s'affiche pas sur le site."
       - label: Contenu
         name: body
         widget: markdown

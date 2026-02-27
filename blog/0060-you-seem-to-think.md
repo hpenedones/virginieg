@@ -3,6 +3,7 @@ title: You seem to think
 order: 60
 header_image: images/49232-1570654955-chuttersnap-120736-unsplash.jpg
 date: '2018-06-05'
+visible: true
 ---
 
 You seem to think all this goodness lives within me and only me.

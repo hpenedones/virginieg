@@ -2,6 +2,7 @@
 title: Je vois rouge
 order: 5
 date: '2016-05-24'
+visible: false
 ---
 
 Je vois rouge. Je suis grognon, bougon, ronchon, de mauvais poil, vénère. J'ai mal au dos, au ventre, aux épaules, aux jambes, à la nuque. Je me sens gonflée, lourde, ballonnée, tendue. Mon ventre ressemble à une baudruche et j'ai l'impression d'avoir les jambes coupées du reste de mon corps.
