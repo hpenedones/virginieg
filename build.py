@@ -11,6 +11,20 @@ import markdown as md_lib
 from jinja2 import Environment, FileSystemLoader
 from PIL import Image, ImageOps
 
+MOIS_FR = ["janvier","février","mars","avril","mai","juin",
+           "juillet","août","septembre","octobre","novembre","décembre"]
+
+def fmt_date_fr(d):
+    if d is None:
+        return ""
+    try:
+        import datetime
+        if isinstance(d, str):
+            d = datetime.date.fromisoformat(d)
+        return f"{d.day} {MOIS_FR[d.month - 1]} {d.year}"
+    except Exception:
+        return str(d)
+
 ROOT    = Path(__file__).parent
 SITE    = ROOT / "_site"
 TMPL    = ROOT / "templates"
@@ -168,6 +182,7 @@ def parse_post(path: Path) -> dict:
     title        = fm.get("title") or slug
     order        = int(fm.get("order") or 0)
     header_image = fm.get("header_image") or None
+    date         = fm.get("date") or None   # may be a datetime.date object from YAML
 
     # Short excerpt: first ~180 chars of body text
     raw_exc = body
@@ -184,6 +199,7 @@ def parse_post(path: Path) -> dict:
     return dict(
         slug=slug, order=order, title=title,
         header_image=header_image, excerpt=excerpt, html=html,
+        date=date, date_str=fmt_date_fr(date),
     )
 
 
@@ -236,6 +252,7 @@ def build():
     # ── Blog posts ── (newest first in listing; only posts with a header image)
     posts = [parse_post(p) for p in sorted((ROOT / "blog").glob("*.md"), reverse=True)]
     posts = [p for p in posts if p["header_image"]]
+    posts.sort(key=lambda p: str(p["date"] or "0000-00-00"), reverse=True)
     render("posts_list.html", SITE / "textes" / "index.html",
            posts=posts, current_page="textes", base="../")
     for post in posts:

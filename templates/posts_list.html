@@ -14,6 +14,7 @@
     </a>
     {% endif %}
     <div class="post-card-text">
+      {% if post.date_str %}<p class="post-date">{{ post.date_str }}</p>{% endif %}
       <h2><a href="{{ base }}textes/{{ post.slug }}/">{{ post.title }}</a></h2>
       {% if post.excerpt %}<p>{{ post.excerpt }}</p>{% endif %}
       <a href="{{ base }}textes/{{ post.slug }}/" class="read-more">Lire la suite →</a>

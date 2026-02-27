@@ -561,6 +561,14 @@ table td:first-child { color: var(--color-muted); width: 40%; }
 
 /* ── INDIVIDUAL POST ── */
 .post-page h1 { margin-bottom: 2rem; }
+.post-date {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0.5rem 0 1.2rem;
+}
+.post-card-text .post-date { margin: 0 0 0.4rem; }
 .post-page .post-header-image {
   width: 100%;
   max-height: 340px;

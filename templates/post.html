@@ -8,6 +8,8 @@
   <img src="{{ base }}{{ post.header_image }}" alt="" class="post-header-image">
   {% endif %}
 
+  {% if post.date_str %}<p class="post-date">{{ post.date_str }}</p>{% endif %}
+
   <div class="post-content">
     {{ post.html | safe }}
   </div>

@@ -31,6 +31,13 @@ collections:
         widget: image
         required: false
         hint: "Image affichée en haut du billet."
+      - label: Date de publication
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DD"
+        date_format: "DD/MM/YYYY"
+        time_format: false
+        required: false
       - label: Contenu
         name: body
         widget: markdown
