@@ -1,6 +1,7 @@
-# Tango et Corneille
-
-## Contenu
+---
+title: Tango et Corneille
+order: 20
+---
 
 Nous avons la chance de vivre parmi les bêtes: chats et chien. À Londres c'est un vrai luxe. Nous cohabitons à cinq dans un charmant trois pièces. Les trois poilus sont de petite taille et ne prennent pas tellement d'espace au sol. Leur conception d'occupation de l'espace se mesure plutôt en décibels, et ils se font à point d'honneur à ce qu'on ne l'oublie jamais.
 

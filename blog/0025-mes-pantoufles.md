@@ -1,6 +1,7 @@
-# Mes pantoufles
-
-## Contenu
+---
+title: Mes pantoufles
+order: 25
+---
 
 Ce matin je suis arrivée à la maison un poil – ou deux – de mauvaise humeur. Deux heures de dressage avec Nyima, tôt, au froid, loin – comme tout à Londres – et avec une prof aussi aimable que la porte extérieure de la prison d'Alcatraz avaient eu raison du sentiment si plaisant d'être arrivé au week-end.
 

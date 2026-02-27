@@ -1,6 +1,7 @@
-# Mes chatons, forever
-
-## Contenu
+---
+title: Mes chatons, forever
+order: 1
+---
 
 Petit nez rose, petit nez gris,  
 Nos chatons adorés sont partis.

@@ -1,8 +1,8 @@
-# Le revolver dort
-
-![Header image](../images/49232-1570655462-depositphotos-140683730-original.jpg)
-
-## Contenu
+---
+title: Le revolver dort
+order: 54
+header_image: images/49232-1570655462-depositphotos-140683730-original.jpg
+---
 
 Elle va partir. Elle ne peut pas continuer à vivre. Lui non plus. Il ne le mérite pas, il ne la mérite pas, ils ne se méritent pas, ils ne le méritent pas. Laisser deux orphelins est hors de question.
 

@@ -1,6 +1,7 @@
-# Gestion de projet et super-héros
-
-## Contenu
+---
+title: Gestion de projet et super-héros
+order: 10
+---
 
 Je viens de rentrer de ce qui s'appelle ici à Londres un *Pop Up Challenge*. L'idée est de tenir boutique pendant une durée limitée, en l'occurrence deux jours, et de vendre des produits inventés, créés et griffés pour l'occasion. L'équipe gagnante est celle qui vend le plus et a la plus grande présence sur les médias sociaux.
 

@@ -1,6 +1,7 @@
-# À mouton perché
-
-## Contenu
+---
+title: À mouton perché
+order: 12
+---
 
 Ce matin le facteur a déposé chez nous une enveloppe blanche, sans distinction particulière, sans nom, qui arborait seulement notre adresse. Enfin *notre* adresse. Disons plutôt celle qui nous est dévolue pendant un an, durée moyenne des contrats de baux à Londres.
 

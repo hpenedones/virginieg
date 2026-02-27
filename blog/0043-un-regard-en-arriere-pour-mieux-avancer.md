@@ -1,8 +1,8 @@
-# Un regard en arrière pour mieux avancer
-
-![Header image](../images/49232-1570656416-depositphotos-92498896-original.jpg)
-
-## Contenu
+---
+title: Un regard en arrière pour mieux avancer
+order: 43
+header_image: images/49232-1570656416-depositphotos-92498896-original.jpg
+---
 
 À la fin 2015, j'ai quitté mon travail sans rien derrière. Pas de job, pas de plan. Juste le projet de devenir une version de moi-même ressemblant à autre chose qu'une boule de nerf convaincue que la bonne marche du monde dépendait exclusivement de l'exécution en temps et en heure des mille tâches se succédant inexorablement sur mes listes ¨à faire¨.
 

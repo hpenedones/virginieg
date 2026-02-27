@@ -1,8 +1,8 @@
-# À Rome j'ai vu...
-
-![Header image](../images/49232-1570654755-willian-west-276239-unsplash.jpg)
-
-## Contenu
+---
+title: À Rome j'ai vu...
+order: 63
+header_image: images/49232-1570654755-willian-west-276239-unsplash.jpg
+---
 
 Michel-Ange, incarné sur une scène de théâtre, décliner la demande du pape Jules II de peindre les fresques de la Chapelle Sixtine. Michel-Ange était sculpteur, pas peintre.
 

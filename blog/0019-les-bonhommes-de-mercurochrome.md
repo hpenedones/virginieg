@@ -1,6 +1,7 @@
-# Les Bonhommes de Mercurochrome
-
-## Contenu
+---
+title: Les Bonhommes de Mercurochrome
+order: 19
+---
 
 Ce matin je me suis brûlé le pouce. Quand on se fait mal, à part la douleur, on est traversé par un sentiment de tristesse. En tous cas c'est le cas pour moi. Ma chienne Nyima a confondu ma main avec un bout de bois mort hier et a mordu dans le tas. Ça m'a fait mal, et un éclair de tristesse m'a traversé. Sans compter que, loin d'être déstabilisée par mon ¨Kai¨ aigu — cri à pousser quand votre chiot mord, dixit les meilleurs comportementalistes canins de Londres — Nyima a continué à ronger son bout de bois avec un plaisir non dissimulé. Ce dont j'aurais eu besoin sur le moment, c'était d'un câlin et d'un mot d'empathie. Allez expliquer cela à un chiot de huit mois!
 

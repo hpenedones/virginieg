@@ -1,8 +1,8 @@
-# Imparfait ou pa(r)fait?
-
-![Header image](../images/49232-1572175788-davide-ragusa-1phds-pftcm-unsplash.jpg)
-
-## Contenu
+---
+title: Imparfait ou pa(r)fait?
+order: 37
+header_image: images/49232-1572175788-davide-ragusa-1phds-pftcm-unsplash.jpg
+---
 
 Julien travaille sur son article de blog depuis quelques jours. Il se tâte, ne sait pas si c'est vraiment ça qu'il voulait dire. L'ordre de ses pensées ne lui convient pas, le choix des mots non plus.
 

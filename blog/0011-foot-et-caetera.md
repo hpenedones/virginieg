@@ -1,6 +1,7 @@
-# Foot et caetera
-
-## Contenu
+---
+title: Foot et caetera
+order: 11
+---
 
 Bon maintenant que l'Euro est terminé je peux le dire sans gâcher le plaisir de quiconque: je n'aime pas le foot. C'est à dire, je n'y connais pas grand' chose, c'est vrai. Mais le peu que j'ai pu en voir ou entendre ne m'a pas impressionné des masses.
 

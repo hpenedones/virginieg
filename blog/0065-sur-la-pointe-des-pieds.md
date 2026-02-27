@@ -1,8 +1,8 @@
-# Sur la pointe des pieds
-
-![Header image](../images/49232-1570653367-mat-min-cover1.jpg)
-
-## Contenu
+---
+title: Sur la pointe des pieds
+order: 65
+header_image: images/49232-1570653367-mat-min-cover1.jpg
+---
 
 Une instruction donnée par notre [coach d'écriture](http://www.ecrire.tv) il y a un peu plus de deux ans: écrivez un guide pratique.
 

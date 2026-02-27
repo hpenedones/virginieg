@@ -1,8 +1,8 @@
-# Practice makes perfect
-
-![Header image](../images/49232-1572176990-potter-1028843-1920-1.jpg)
-
-## Contenu
+---
+title: Practice makes perfect
+order: 35
+header_image: images/49232-1572176990-potter-1028843-1920-1.jpg
+---
 
 Alba est à son bureau. Elle écrit les mots, péniblement. Ils ne vont pas ensemble, elle grimace. Ça la peine de poser ces jets difformes sur du papier, ça la gêne même. Elle se console en se disant qu'elle aura toujours les versions suivantes pour se rattraper. Un picotement monte dans ses jambes, une incitation à se lever, à aller faire autre chose, le jardin, courir, nettoyer la cuisine.
 

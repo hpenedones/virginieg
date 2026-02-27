@@ -1,6 +1,7 @@
-# Le tableau
-
-## Contenu
+---
+title: Le tableau
+order: 17
+---
 
 James rêvassait. Ce n'était pas son genre, mais à chaque fois qu'une *amusette* se présentait, il sortait de ses habitudes, de sa vie bien réglée et rangée et se prenait à rêver et à sourire aux pousses de lavande qui pavaient son jardin. Ces sourires béats étaient venus avec l'âge.
 
