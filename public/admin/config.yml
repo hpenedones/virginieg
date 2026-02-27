@@ -15,6 +15,7 @@ collections:
     create: true
     slug: "{{order}}-{{slug}}"
     identifier_field: title
+    summary: "{{title}} {{filename}}"
     fields:
       - label: Titre
         name: title
