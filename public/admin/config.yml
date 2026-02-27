@@ -16,11 +16,7 @@ collections:
     slug: "{{order}}-{{slug}}"
     identifier_field: title
     summary: "{{title}} {{filename}}"
-    sortable_fields:
-      fields: [order, title]
-      default:
-        field: order
-        direction: Descending
+    sortable_fields: ['order', 'title']
     fields:
       - label: Titre
         name: title
