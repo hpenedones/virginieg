@@ -15,7 +15,7 @@ collections:
     create: true
     slug: "{{slug}}"
     identifier_field: title
-    summary: "{{date}} - {{title}}"
+    summary: "{{visible}} | {{date}} - {{title}}"
     sortable_fields: ['date', 'title']
     fields:
       - label: Titre
